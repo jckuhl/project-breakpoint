@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: tomato;
+    h1 {
+        color: $color-header;
+        width: 33%;
+    }
+    form {
+        width: 33%;
+    }
+    ul {
+        display: flex;
+        width: 33%;
+    }
+}

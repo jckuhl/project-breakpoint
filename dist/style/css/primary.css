@@ -1,0 +1,39 @@
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: tomato; }
+  header h1 {
+    color: green;
+    width: 33%; }
+  header form {
+    width: 33%; }
+  header ul {
+    display: flex;
+    width: 33%; }
+
+.flex-content {
+  display: flex;
+  width: 100%; }
+  .flex-content section {
+    width: 50%;
+    background: plum; }
+  .flex-content nav, .flex-content aside {
+    width: 25%;
+    background: orange; }
+
+footer {
+  text-align: center;
+  background: blueviolet;
+  padding: 1em; }
+  footer p {
+    margin: 0; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+/*# sourceMappingURL=primary.css.map */
