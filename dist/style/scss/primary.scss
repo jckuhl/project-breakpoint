@@ -4,11 +4,34 @@
 @import 'footer';
 @import 'mediaqueries';
 
-body {
+html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
+    background: $color-bg;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    margin-top: 1rem;
+    background: $color-card;
+    border: 1px solid $color-trim;
+    border-radius: 5px;
+}
+
+h1, h2, h3, p {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 li {
     list-style: none;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -$footer-height;
+    /* the bottom margin is the negative value of the footer's height */
 }

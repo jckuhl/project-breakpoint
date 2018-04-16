@@ -1,7 +1,11 @@
+.push {
+    height: $footer-height;
+}
+
 footer {
     text-align: center;
-    background: blueviolet;
-    padding: 1em;
+    padding: 1rem;
+    height: $footer-height;
     p {
         margin: 0;
     }

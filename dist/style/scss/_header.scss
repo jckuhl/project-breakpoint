@@ -2,7 +2,7 @@ header {
     display: flex;
     align-items: center;
     width: 100%;
-    background: tomato;
+    background: $color-header-bg;
     h1 {
         color: $color-header;
         width: 33%;
@@ -10,8 +10,16 @@ header {
     form {
         width: 33%;
     }
-    ul {
-        display: flex;
+    nav {
         width: 33%;
+    }
+    ul {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+        li {
+            margin-right: 1rem;
+        }
     }
 }

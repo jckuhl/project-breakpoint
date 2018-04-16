@@ -1,12 +1,11 @@
 .flex-content {
     display: flex;
+    align-items: stretch;
     width: 100%;
     section {
         width: 50%;
-        background: plum;
     }
     nav, aside {
         width: 25%;
-        background: orange;
     }
 }
