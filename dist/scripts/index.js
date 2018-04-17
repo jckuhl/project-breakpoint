@@ -3,10 +3,10 @@
     const cards = Array.from(document.querySelectorAll('.cardholder .card'));
     const techs = Array.from(document.querySelectorAll('.techstack img'));
 
-    // cards.forEach( (card)=> console.log(card.dataset.tech));
+    cards.forEach( (card)=> console.log(card.dataset.tech));
 
     function filterByTech(tech) {
-        return cards.filter((card)=> card.dataset.tech === tech);
+        return cards.filter((card)=> card.dataset.tech.split(' ').includes(tech));
     }
 
     function displayTech(tech) {
