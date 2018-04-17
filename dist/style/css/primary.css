@@ -4,12 +4,17 @@ header {
   width: 100%;
   background: black; }
   header h1 {
-    color: green;
     width: 33%; }
+    header h1 a {
+      color: white;
+      text-decoration: none; }
   header form {
     width: 33%; }
   header nav {
     width: 33%; }
+    header nav a {
+      color: white;
+      text-decoration: none; }
   header ul {
     display: inline-flex;
     justify-content: space-between;
@@ -26,6 +31,16 @@ header {
     width: 50%; }
   .flex-content nav, .flex-content aside {
     width: 25%; }
+
+.techstack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem; }
+  .techstack img {
+    border: 2px solid black;
+    margin: 0 1rem;
+    cursor: pointer; }
 
 .push {
   height: 50px; }

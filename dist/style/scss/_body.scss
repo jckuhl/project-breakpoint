@@ -9,3 +9,15 @@
         width: 25%;
     }
 }
+
+.techstack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    img {
+        border: 2px solid black;
+        margin: 0 1rem;
+        cursor: pointer;
+    }
+}

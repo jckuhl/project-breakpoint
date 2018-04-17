@@ -4,14 +4,21 @@ header {
     width: 100%;
     background: $color-header-bg;
     h1 {
-        color: $color-header;
         width: 33%;
+        a {
+            color: $color-header;
+            text-decoration: none;
+        }
     }
     form {
         width: 33%;
     }
     nav {
         width: 33%;
+        a {
+            color: $color-header;
+            text-decoration: none;
+        }
     }
     ul {
         display: inline-flex;
