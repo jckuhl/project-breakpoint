@@ -35,3 +35,12 @@ li {
     margin: 0 auto -$footer-height;
     /* the bottom margin is the negative value of the footer's height */
 }
+
+figcaption {
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+figure {
+    margin: 0;
+}

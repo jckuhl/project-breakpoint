@@ -15,9 +15,19 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 1rem;
+    flex-wrap: wrap;
     img {
-        border: 2px solid black;
         margin: 0 1rem;
         cursor: pointer;
+        flex-shrink: 1;
+        margin: 1rem;
     }
+}
+
+.selected {
+    border: 3px solid $color-border-selected;
+}
+
+.deselected {
+    border: 3px solid $color-border-deselected;
 }

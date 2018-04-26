@@ -36,11 +36,19 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  flex-wrap: wrap; }
   .techstack img {
-    border: 2px solid black;
     margin: 0 1rem;
-    cursor: pointer; }
+    cursor: pointer;
+    flex-shrink: 1;
+    margin: 1rem; }
+
+.selected {
+  border: 3px solid red; }
+
+.deselected {
+  border: 3px solid black; }
 
 .push {
   height: 50px; }
@@ -78,5 +86,12 @@ li {
   height: 100%;
   margin: 0 auto-50px;
   /* the bottom margin is the negative value of the footer's height */ }
+
+figcaption {
+  text-align: center;
+  font-size: 0.75rem; }
+
+figure {
+  margin: 0; }
 
 /*# sourceMappingURL=primary.css.map */

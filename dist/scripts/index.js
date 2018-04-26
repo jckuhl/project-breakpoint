@@ -1,12 +1,10 @@
-!function() {
+(function() {
 
-    "use strict"
+    'use strict';
 
     const cards = Array.from(document.querySelectorAll('.cardholder .card'));
-    const techs = Array.from(document.querySelectorAll('.techstack img'));
+    const techs = document.querySelectorAll('.techstack figure');
     const cardholder = document.querySelector('.cardholder');
-
-    // cards.forEach( (card)=> console.log(card.dataset.tech));
 
     // returns an array of cards matching the selected technology
     function filterByTech(tech) {
@@ -15,10 +13,10 @@
 
     // create the div elements for the cards
     function createCards(card) {
-        let div = document.createElement('div');
-        div.classList.add('card');
-        div.innerHTML = card.innerHTML;
-        cardholder.appendChild(div);
+        const art = document.createElement('article');
+        art.classList.add('card');
+        art.innerHTML = card.innerHTML;
+        cardholder.appendChild(art);
     }
 
     // display either all of the cards, or the filtered array of cards
@@ -33,23 +31,25 @@
 
     // add event listeners to the images in the tech filter
     techs.forEach( (tech)=> tech.addEventListener('click', ()=> {
-        if(tech.classList.contains('deselected')) {
+        const techImg = tech.children[0];
+        if(techImg.classList.contains('deselected')) {
             // select the technology
-            tech.classList.remove('deselected');
-            tech.classList.add('selected');
+            techImg.classList.remove('deselected');
+            techImg.classList.add('selected');
+            console.log(event.target.dataset.tech);
             techs.forEach( (tech)=> {
                 // remove the selected class from any previously select technology
-                if(event.target.alt != tech.alt) {
-                    tech.classList.remove('selected');
-                    tech.classList.add('deselected');
+                if(event.target.dataset.tech != tech.dataset.tech) {
+                    techImg.classList.remove('selected');
+                    techImg.classList.add('deselected');
                 }
             });
-            displayTech(tech.alt);
+            displayTech(tech.dataset.tech);
         } else {
-            tech.classList.remove('selected');
-            tech.classList.add('deselected');
+            techImg.classList.remove('selected');
+            techImg.classList.add('deselected');
             displayTech('all');
         }
     }));
 
-}();
+})();
