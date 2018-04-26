@@ -32,19 +32,19 @@
     // add event listeners to the images in the tech filter
     techs.forEach( (tech)=> tech.addEventListener('click', ()=> {
         const techImg = tech.children[0];
+        const technology = tech.dataset.tech;
         if(techImg.classList.contains('deselected')) {
             // select the technology
             techImg.classList.remove('deselected');
             techImg.classList.add('selected');
-            console.log(event.target.dataset.tech);
             techs.forEach( (tech)=> {
                 // remove the selected class from any previously select technology
-                if(event.target.dataset.tech != tech.dataset.tech) {
+                if(event.target.closest('figure').dataset.tech !== technology) {
                     techImg.classList.remove('selected');
                     techImg.classList.add('deselected');
                 }
             });
-            displayTech(tech.dataset.tech);
+            displayTech(technology);
         } else {
             techImg.classList.remove('selected');
             techImg.classList.add('deselected');
