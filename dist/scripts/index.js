@@ -3,7 +3,7 @@
     'use strict';
 
     const cards = Array.from(document.querySelectorAll('.cardholder .card'));
-    const techs = document.querySelectorAll('.techstack figure');
+    const logos = document.querySelectorAll('.techstack figure');
     const cardholder = document.querySelector('.cardholder');
 
     // returns an array of cards matching the selected technology
@@ -30,24 +30,25 @@
     }
 
     // add event listeners to the images in the tech filter
-    techs.forEach( (tech)=> tech.addEventListener('click', ()=> {
-        const techImg = tech.children[0];
-        const technology = tech.dataset.tech;
-        if(techImg.classList.contains('deselected')) {
+    logos.forEach( (logo)=> logo.addEventListener('click', ()=> {
+        const logoImg = logo.children[0];
+        const technology = logo.dataset.tech;
+        if(logoImg.classList.contains('deselected')) {
             // select the technology
-            techImg.classList.remove('deselected');
-            techImg.classList.add('selected');
-            techs.forEach( (tech)=> {
+            logoImg.classList.remove('deselected');
+            logoImg.classList.add('selected');
+            logos.forEach( (logo)=> {
                 // remove the selected class from any previously select technology
-                if(event.target.closest('figure').dataset.tech !== technology) {
-                    techImg.classList.remove('selected');
-                    techImg.classList.add('deselected');
+                if(event.target.closest('figure').dataset.tech != logo.dataset.tech) {
+                    //console.log(tech.children);
+                    logo.children[0].classList.remove('selected');
+                    logo.children[0].classList.add('deselected');
                 }
             });
             displayTech(technology);
         } else {
-            techImg.classList.remove('selected');
-            techImg.classList.add('deselected');
+            logoImg.classList.remove('selected');
+            logoImg.classList.add('deselected');
             displayTech('all');
         }
     }));
