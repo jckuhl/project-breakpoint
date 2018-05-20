@@ -21,11 +21,15 @@
         cursor: pointer;
         flex-shrink: 1;
         margin: 1rem;
+        border-radius: 5px;
+    }
+    figure {
+        cursor: pointer;
     }
 }
 
 .selected {
-    border: 3px solid $color-border-selected;
+    border: 5px solid $color-border-selected;
 }
 
 .deselected {

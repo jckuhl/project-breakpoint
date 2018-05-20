@@ -1,0 +1,7 @@
+# Directories that are held in their own repositories:
+pong/
+pixelpaint/
+portfolio/
+node_modules/
+
+.DS_Store

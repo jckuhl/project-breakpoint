@@ -42,10 +42,13 @@ header {
     margin: 0 1rem;
     cursor: pointer;
     flex-shrink: 1;
-    margin: 1rem; }
+    margin: 1rem;
+    border-radius: 5px; }
+  .techstack figure {
+    cursor: pointer; }
 
 .selected {
-  border: 3px solid red; }
+  border: 5px solid red; }
 
 .deselected {
   border: 3px solid black; }
@@ -64,13 +67,13 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background: #e6e8ed;
+  background: #214ebe;
   font-family: Arial, Helvetica, sans-serif; }
 
 .card {
   margin-top: 1rem;
-  background: white;
-  border: 1px solid #cbcfd8;
+  background: #9fbef8;
+  border: 1px solid #011136;
   border-radius: 5px; }
 
 h1, h2, h3, p {
@@ -92,6 +95,10 @@ figcaption {
   font-size: 0.75rem; }
 
 figure {
-  margin: 0; }
+  margin: 0;
+  border-radius: 5px; }
+
+figure:hover {
+  background: #214ebe; }
 
 /*# sourceMappingURL=primary.css.map */

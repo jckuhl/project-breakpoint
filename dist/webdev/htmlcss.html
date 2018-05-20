@@ -55,50 +55,109 @@
                 </ul>
             </nav>
             <section>
-                <article class="card">
+                <article class="card" data-tech="html css">
                     <h2>HTML &amp; CSS</h2>
                     <p>Here are some useful HTML and CSS resources</p>
                 </article>
                 <article class="card">
-                    <h2>CSS Tricks</h2>
-                    <p><a href="https://css-tricks.com/" target="_blank">Visit</a></p>
-                    <p>CSS Tricks is a great resource for learning CSS.  CSS Tricks covers everything you need to know from transitions to gradients.  Their <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Guide to Flexbox</a> is a guide I refer to almost every time I use Flexbox.</p>
+                    <h2>Filter by Technology</h2>
+                    <p><label for="typeSelect">Chose an option: </label>
+                    <select id="typeSelect">
+                        <option value="any" selected>Any</option>
+                        <option value="ref">References</option>
+                        <option value="doc">Library or Framework</option>
+                        <option value="tut">Tutorials and Courses</option>
+                    </select></p>
+                    <p>Click on a technology</p>
+                    <div class="techstack">
+                        <figure data-tech="html">
+                            <img src="../../imgs/logos/html5-logo-sm.png" alt="html" class="deselected">
+                            <figcaption>HTML</figcaption>
+                        </figure>
+                        <figure data-tech="css">
+                            <img src="../../imgs/logos/css3-logo-sm.png" alt="css" class="deselected">
+                            <figcaption>CSS</figcaption>
+                        </figure>
+                        <figure data-tech="sass">
+                            <img src="../../imgs/logos/sass-logo-sm.png" alt="sass" class="deselected">
+                            <figcaption>Sass</figcaption>
+                        </figure>
+                        <figure data-tech="less">
+                            <img src="../../imgs/logos/jquery-logo-sm.png" alt="less" class="deselected">
+                            <figcaption>Less</figcaption>
+                        </figure>
+                        <figure data-tech="bulma">
+                            <img src="../../imgs/logos/react-logo-sm.png" alt="bulma" class="deselected">
+                            <figcaption>Bulma</figcaption>
+                        </figure>
+                        <figure data-tech="materialize">
+                            <img src="../../imgs/logos/angular-logo-sm.png" alt="materialize" class="deselected">
+                            <figcaption>Materialize</figcaption>
+                        </figure>
+                    </div>
                 </article>
-                <article class="card">
-                    <h2>Bootstrap</h2>
-                    <p><a href="https://getbootstrap.com/" target="_blank">Visit</a></p>
-                    <p>Bootstrap is among the most popular CSS frameworks to work with.  Bootstrap allows you to develop your site with lightning speed, providing you with responsive layouts in no time at all.</p>
-                </article>
-                <article class="card">
-                    <h2>Bootswatch</h2>
-                    <p><a href="https://bootswatch.com/" target="_blank">Visit</a></p>
-                    <p>Bootswatch provides a number of pre-configured styles you can rapidly apply to your website.  Bootswatch is based on Bootstrap.  The website is filled with multiple examples of layout and code.</p>
-                </article>
-                <article class="card">
-                    <h2>Materialize</h2>
-                    <p><a href="http://materializecss.com/" target="_blank">Visit</a></p>
-                    <p>Materialize is a CSS framework that enables you to create responsive websites that are designed to give your users a smoother experience as they use your site.  Materialize is well documented and easy to learn and utilize.</p>
-                </article>
-                <article class="card">
-                    <h2>Sass</h2>
-                    <p><a href="http://sass-lang.com/" target="_blank">Visit</a></p>
-                    <p>Sass is a CSS precompiler that takes the pain out of coding CSS.  It enables you to use features such as mixins, extensions, loops, conditionals and variables (among other tricks) and uses Ruby to compile your Sass files to CSS.</p>
-                </article>
-                <article class="card">
-                    <h2>Less</h2>
-                    <p><a href="http://sass-lang.com/" target="_blank">Visit</a></p>
-                    <p>Less is a CSS precompiler that uses JavaScript to convert your code to CSS.  Like Sass, Less provides more features like mixins, conditionals and variables and makes CSS coding faster and easier to read.</p>
-                </article>
-                <article class="card">
-                    <h2>Normalize</h2>
-                    <p><a href="https://necolas.github.io/normalize.css/" target="_blank">Visit</a></p>
-                    <p>Normalize is a stylesheet that helps, well, normalize the differences between browsers.  This will help give your users a more consistent experience across browsers.</p>
-                </article>
-                <article class="card">
-                    <h2>CSS Reset</h2>
-                    <p><a href="https://cssreset.com/scripts/eric-meyer-reset-css/" target="_blank">Visit</a></p>
-                    <p>CSS Reset is a stylesheet that helps minimize the differences between browsers.  This will help give your users a more consistent experience across browsers.</p>
-                </article>
+                <div class="cardholder">
+                    <article class="card" data-tech="html css">
+                        <h2>HTML.com</h2>
+                        <p><a href="https://html.com/">Visit</a></p>
+                        <p>HTML.com is a site that will teach you HTML and CSS from beginner to expert.  They provide tutorials, cheat sheets and articles discussing HTML and CSS.</p>
+                    </article>
+                    <article class="card" data-tech="css">
+                        <h2>CSS Tricks</h2>
+                        <p><a href="https://css-tricks.com/" target="_blank">Visit</a></p>
+                        <p>CSS Tricks is a great resource for learning CSS.  CSS Tricks covers everything you need to know from transitions to gradients.  Their <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Guide to Flexbox</a> is a guide I refer to almost every time I use Flexbox.</p>
+                    </article>
+                    <article class="card" data-tech="bootstrap">
+                        <h2>Bootstrap</h2>
+                        <p><a href="https://getbootstrap.com/" target="_blank">Visit</a></p>
+                        <p>Bootstrap is among the most popular CSS frameworks to work with.  Bootstrap allows you to develop your site with lightning speed, providing you with responsive layouts in no time at all.</p>
+                    </article>
+                    <article class="card" data-tech="bootstrap">
+                        <h2>Bootswatch</h2>
+                        <p><a href="https://bootswatch.com/" target="_blank">Visit</a></p>
+                        <p>Bootswatch provides a number of pre-configured styles you can rapidly apply to your website.  Bootswatch is based on Bootstrap.  The website is filled with multiple examples of layout and code.</p>
+                    </article>
+                    <article class="card" data-tech="materialize">
+                        <h2>Materialize</h2>
+                        <p><a href="http://materializecss.com/" target="_blank">Visit</a></p>
+                        <p>Materialize is a CSS framework that enables you to create responsive websites that are designed to give your users a smoother experience as they use your site.  Materialize is well documented and easy to learn and utilize.</p>
+                    </article>
+                    <article class="card" data-tech="sass">
+                        <h2>Sass</h2>
+                        <p><a href="http://sass-lang.com/" target="_blank">Visit</a></p>
+                        <p>Sass is a CSS precompiler that takes the pain out of coding CSS.  It enables you to use features such as mixins, extensions, loops, conditionals and variables (among other tricks) and uses Ruby to compile your Sass files to CSS.</p>
+                    </article>
+                    <article class="card" data-tech="less">
+                        <h2>Less</h2>
+                        <p><a href="http://sass-lang.com/" target="_blank">Visit</a></p>
+                        <p>Less is a CSS precompiler that uses JavaScript to convert your code to CSS.  Like Sass, Less provides more features like mixins, conditionals and variables and makes CSS coding faster and easier to read.</p>
+                    </article>
+                    <article class="card" data-tech="css">
+                        <h2>Normalize</h2>
+                        <p><a href="https://necolas.github.io/normalize.css/" target="_blank">Visit</a></p>
+                        <p>Normalize is a stylesheet that helps, well, normalize the differences between browsers.  This will help give your users a more consistent experience across browsers.</p>
+                    </article>
+                    <article class="card" data-tech="css">
+                        <h2>CSS Reset</h2>
+                        <p><a href="https://cssreset.com/scripts/eric-meyer-reset-css/" target="_blank">Visit</a></p>
+                        <p>CSS Reset is a stylesheet that helps minimize the differences between browsers.  This will help give your users a more consistent experience across browsers.</p>
+                    </article>
+                    <article class="card" data-tech="css">
+                        <h2>CSS Gradients</h2>
+                        <p><a href="https://cssgradient.io/">Visit</a></p>
+                        <p>CSS Gradients is a free web tool for designing gradients for your website.  Plug in the colors you want, play around with it, and then simply copy and paste the CSS to where you need it.</p>
+                    </article>
+                    <article class="card" data-tech="bulma">
+                        <h2>Bulma</h2>
+                        <p><a href="https://bulma.io/">Visit</a></p>
+                        <p>Bulma is a CSS framework designed for mobile-first responsive websites.  It is modular and modern, based on CSS Flexbox.</p>
+                    </article>
+                    <article class="card" data-tech="css">
+                        <h2>CSS Icons</h2>
+                        <p><a href="http://cssicon.space/#/icon/more-solid">Visit</a></p>
+                        <p>CSS Icons provides hundreds of icons made from pure CSS that can exist in a single div element.  It also provides transition animations for use as well.</p>
+                    </article>
+                </div>
             </section>
             <aside>
                 <h3>Other Useful Links</h3>

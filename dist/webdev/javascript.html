@@ -1,19 +1,6 @@
-<!-- All | Browser | Node
-
-Courses | References
-
-Framework/Library:
-    Angular | React | Vue | Electron | Phazer | JQuery | Node | Regular
-
-https://toddmotto.com/
-
-http://eloquentjavascript.net/  -->
-    <!--Also in books: https://www.amazon.com/gp/product/1593275846/-->
-
 <!-- 
 https://codeburst.io/
 https://www.html5canvastutorials.com/tutorials/html5-canvas-element/ -->
-http://www.jstips.co/en/javascript/
 
 <!DOCTYPE html>
 <html lang="en">
@@ -74,10 +61,19 @@ http://www.jstips.co/en/javascript/
             <section>
                 <article class="card">
                     <h2>JavaScript</h2>
-                    <p>JavaScript is the expansive functional side of web development, a vast programming language that has gone through years of constant development and change.  </p>
+                    <p>JavaScript is the expansive functional side of web development, a vast programming language that has gone through years of constant development and change.  Here are numerous resources I've found across the web.  You can go ahead and filter them by library or framework if you like.</p>
                 </article>
                 <article class="card">
                     <h2>Filter by Technology</h2>
+                    <p><label for="typeSelect">Chose an option: </label>
+                    <select id="typeSelect">
+                        <option value="any" selected>Any</option>
+                        <option value="libraries">Libraries</option>
+                        <option value="frameworks">Frameworks</option>
+                        <option value="references">References</option>
+                        <option value="tutorials">Tutorials</option>
+                    </select></p>
+                    <p>Pick a framework or a library</p>
                     <div class="techstack">
                         <figure data-tech="javascript">
                             <img src="../../imgs/logos/js-logo-sm.png" class="deselected">
@@ -95,56 +91,139 @@ http://www.jstips.co/en/javascript/
                             <img src="../../imgs/logos/angular-logo-sm.png" class="deselected">
                             <figcaption>Angular</figcaption>
                         </figure>
+                        <figure data-tech="vue">
+                            <img src="../../imgs/logos/vue-logo-sm.png" class="deselected">
+                            <figcaption>Vue.js</figcaption>
+                        </figure>
                         <figure data-tech="electron">
                             <img src="../../imgs/logos/electron-logo-sm.png" class="deselected">
                             <figcaption>Electron</figcaption>
                         </figure>
+                        <figure data-tech="node">
+                            <img src="../../imgs/logos/node-logo-sm.png" class="deselected">
+                            <figcaption>Node.js</figcaption>
+                        </figure>
+                        <figure data-tech="phaser">
+                            <img src="../../imgs/logos/phaser-logo-sm.png" class="deselected">
+                            <figcaption>Phaser</figcaption>
+                        </figure>
                     </div>
                 </article>
                 <div class="cardholder">
-                    <article class="card" data-tech="angular">
+                    <article class="card" data-tech="angular frameworks">
                         <h2>Angular</h2>
-                        <p><a href="https://angular.io/">Visit</a></p>
-                        <p>Angular is Google's framework for building Single Page Applications.</p>
+                        <p><a href="https://angular.io/" target="_blank">Visit</a></p>
+                        <p>Angular is Google's framework for building Single Page Applications.  The framework is written in Typescript, a superset of JavaScript.  It allows you to build your web apps in reusable components and delivers high performant web experiences.</p>
                     </article>
-                    <article class="card" data-tech="jquery">
+                    <article class="card" data-tech="jquery libraries">
                         <h2>jQuery</h2>
-                        <p><a href="http://jquery.com/">Visit</a></p>
-                        <p>jQuery is JavaScript's most famous library.</p>
+                        <p><a href="http://jquery.com/" target="_blank">Visit</a></p>
+                        <p>jQuery is JavaScript's most famous library.  Though it's use has diminished in recent years, it's still holds a lot of utility and is found in many projects.  As a web developer, understanding jQuery will still be useful.  This is the official website for the library.</p>
                     </article>
-                    <article class="card" data-tech="react">
+                    <article class="card" data-tech="jquery tutorials">
+                        <h2>Try jQuery</h2>
+                        <p><a href="http://try.jquery.com/" target="_blank">Visit</a></p>
+                        <p>Try jQuery is an interactive site that teaches the basics of jQuery, focusing on event management and DOM traversal.</p>
+                    </article>
+                    <article class="card" data-tech="react frameworks">
                         <h2>React</h2>
-                        <p><a href="https://reactjs.org/">Visit</a></p>
-                        <p>React is one of the fastest growing single page application frameworks</p>
+                        <p><a href="https://reactjs.org/" target="_blank">Visit</a></p>
+                        <p>React is one of the fastest growing single page application frameworks.  React uses JSX to write reusable components.  It manages state, (and can do further with <a href="https://redux.js.org/" target="_blank">Redux</a>) and helps you develop complex UIs easily.</p>
                     </article>
-                    <article class="card" data-tech="react">
+                    <article class="card" data-tech="react frameworks">
                         <h2>React Native</h2>
-                        <p><a href="https://facebook.github.io/react-native/docs/getting-started.html">Visit</a></p>
-                        <p>React is one of the fastest growing single page application frameworks</p>
+                        <p><a href="https://facebook.github.io/react-native/docs/getting-started.html" target="_blank">Visit</a></p>
+                        <p>React Native is a framework that allows you to use <a href="https://reactjs.org/" target="_blank">React</a> to construct mobile apps on Android and iOS.</p>
                     </article>
-                    <article class="card" data-tech="vue">
-                        <h2>Vue</h2>
-                        <p><a href="https://reactjs.org/">Visit</a></p>
-                        <p>React is one of the fastest growing single page application frameworks</p>
+                    <article class="card" data-tech="vue frameworks">
+                        <h2>Vue.js</h2>
+                        <p><a href="https://vuejs.org/" target="_blank">Visit</a></p>
+                        <p>Vue is described by Gregg Pollack of <a href="https://www.vuemastery.com/" target="_blank">VueMastery.com</a> as "an approachable, versatile and performant JavaScript framework that allows you to make a more maintainable and testable codebase."</p>
                     </article>
-                    <article class="card" data-tech="electron">
+                    <article class="card" data-tech="vue tutorials">
+                        <h2>Vue Mastery</h2>
+                        <p><a href="https://www.vuemastery.com/" target="_blank">Visit</a></p>
+                        <p>Vue Mastery contains a whole course load of materials that will teach you Vue, which is a small, yet powerful and performant framework for web apps.</p>
+                    </article>
+                    <article class="card" data-tech="electron frameworks">
                         <h2>Electron</h2>
-                        <p><a href="https://electronjs.org/">Visit</a></p>
+                        <p><a href="https://electronjs.org/" target="_blank">Visit</a></p>
                         <p>Electron is a JavaScript framework that allows you to build desk top apps using HTML, CSS and JavaScript.  VSCode, Atom, and Github Desktop are a few examples of what Electron can do.</p>
                     </article>
-                    <article class="card" data-tech="javascript">
+                    <article class="card" data-tech="javascript references">
                         <h2>Eloquent JavaScript</h2>
-                        <p><a href="http://eloquentjavascript.net/">Visit</a></p>
-                        <p>Angular is Google's framework for building Single Page Applications.</p>
+                        <p><a href="http://eloquentjavascript.net/" target="_blank">Visit</a></p>
+                        <p>Eloquent JavaScript is an online book that . . . There is also a physical <a href="https://www.amazon.com/gp/product/1593275846/" target="_blank">book</a> you can pick up, if you're the type who likes holding paper.</p>
                     </article>
-                    <article class="card" data-tech="javascript">
+                    <article class="card" data-tech="javascript tutorials">
                         <h2>JavaScript 30</h2>
-                        <p><a href="https://javascript30.com/">Visit</a></p>
-                        <p>Angular is Google's framework for building Single Page Applications.</p>
+                        <p><a href="https://javascript30.com/" target="_blank">Visit</a></p>
+                        <p>JavaScript 30 is one of Wes Bos's courses.  It is a free course that challenges you to 30 minutes of JavaScript coding a day.  He provides you with a small project to make and challenges you to make it yourself and then goes over the solution in clear detail.</p>
                     </article>
-                    <article class="card" data-tech="javascript electron">
+                    <article class="card" data-tech="javascript references">
+                        <h2>JS Tips</h2>
+                        <p><a href="http://www.jstips.co/en/javascript/">Visit</a></p>
+                        <p>JS Tips is a collection of JavaScript tips that will help you be a better programmer.</p>
+                    </article>
+                    <article class="card" data-tech="javascript electron references">
                         <h2>Christian Engvall</h2>
-                        <p><a href="https://www.christianengvall.se/">Visit</a></p>
+                        <p><a href="https://www.christianengvall.se/" target="_blank">Visit</a></p>
+                        <p>Christian Engvall is a software developer.  His site has numerous articles about web development</p>
+                    </article>
+                    <article class="card" data-tech="node frameworks">
+                        <h2>Node.js</h2>
+                        <p><a href="https://nodejs.org/en/" target="_blank">Visit</a></p>
+                        <p>Node.js is a JavaScript runtime that can run on the console or the server.  Node.js enables us to use JavaScript to write server-side scripts.</p>
+                    </article>
+                    <article class="card" data-tech="node tutorials">
+                        <h2>Node School</h2>
+                        <p><a href="https://nodeschool.io/" target="_blank">Visit</a></p>
+                        <p>Node School is a website with courses that will teach you Node.js.</p>
+                    </article>
+                    <article class="card" data-tech="angular vue electron tutorials">
+                        <h2>Coursetro</h2>
+                        <p><a href="https://coursetro.com/">Visit</a></p>
+                        <p>Coursetro has numerous courses on JavaScript and various frameworks.  It has a mixture of free and premium courses.</p>
+                    </article>
+                    <article class="card" data-tech="phaser frameworks">
+                        <h2>Phaser</h2>
+                        <p><a href="https://phaser.io/" target="_blank">Visit</a></p>
+                        <p>Phaser is a JavaScript framework that uses HTML canvas to write games.</p>
+                    </article>
+                    <article class="card" data-tech="javascript react angular vue node tutorials">
+                        <h2>egghead</h2>
+                        <p><a href="https://egghead.io/" target="_blank">Visit</a></p>
+                        <p>egghead delivers courses on JavaScript and many of its frameworks and libraries in concise courses that get to the point.</p>
+                    </article>
+                    <article class="card" data-tech="javascript jquery react node tutorials">
+                        <h2>Codeburst</h2>
+                        <p><a href="https://codeburst.io/">Visit</a></p>
+                        <p>Codeburst contains a vast number of web development courses ranging from basic JavaScript and jQuery, to frameworks like React and Node.</p>
+                    </article>
+                    <article class="card" data-tech="javascript libraries">
+                        <h2>Lodash</h2>
+                        <p><a href="https://lodash.com/">Visit</a></p>
+                        <p>Lodash is a popular JavaScript utility library, known for its speed and modularity.  You can download the entire Lodash library and apply it to your project, or cherry pick specific functions.  Lodash also has an <em>fp</em> library to support functional programming.</p>
+                    </article>
+                    <article class="card" data-tech="javascript libraries">
+                        <h2>Underscore</h2>
+                        <p><a href="http://underscorejs.org/">Visit</a></p>
+                        <p>Underscore provides a whole mess of utilities for JavaScript programmers.  Underscore provides over 100 helper functions without extending built in objects.</p>
+                    </article>
+                    <article class="card" data-tech="react frameworks">
+                        <h2>Next.js</h2>
+                        <p><a href="https://nextjs.org/">Visit</a></p>
+                        <p>Next.js is a small framework for React apps, designed for static and server-side rendered applications.  Next.js makes React applications simple.</p>
+                    </article>
+                    <article class="card" data-tech="javascript references">
+                        <h2>Job Ready JavaScript</h2>
+                        <p><a href="https://github.com/P1xt/p1xt-guides/blob/master/job-ready-javascript-edition-2.0.md">Visit</a></p>
+                        <p>This is a guide to help any potential web developer to be job ready with his or her JavaScript abilities.</p>
+                    </article>
+                    <article class="card" data-tech="javascript angular react node tutorials">
+                        <h2>Scotch School</h2>
+                        <p><a href="https://scotch.io/">Visit</a></p>
+                        <p>Scotch is a subscription based site that teaches web development.  They focus on building apps and teaching the <em>why</em> behind the code.  Their projects will also help you build out your portfolio.</p>
                     </article>
                 </div>
             </section>
