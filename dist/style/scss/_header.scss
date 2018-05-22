@@ -7,7 +7,9 @@ header {
     box-shadow: 3px 3px 3px $color-trim-shadow;
     h1 {
         width: 33%;
-        a {
+        a:visited,
+        a:link,
+        a:hover {
             color: $color-header;
             text-decoration: none;
         }
@@ -27,8 +29,60 @@ header {
         justify-content: space-between;
         width: 100%;
         padding: 0;
+        a:visited,
+        a:link {
+            color: $color-header;
+            text-decoration: none;
+        }
+        a:hover {
+            color: $color-header;
+            text-decoration: underline;
+        }
         li {
             margin-right: 1rem;
         }
     }
+    form {
+        margin: 0;
+        padding: 0;
+    }
+    div {
+        display: inline-flex;
+        align-items: stretch;
+    }
+    button {
+        font-size: 1rem;
+        background-color: $color-header;
+        color: $color-header-bg;
+        border: none;
+        margin: 0;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border: 2px solid white;
+        outline: none;
+        cursor: pointer;
+    }
+    button:focus {
+        outline: none;
+    }
+    label {
+        color: $color-header;
+        margin: 0;
+        font-size: 1.25rem;
+        margin-right: 0.75rem;
+    }
+    input[type="text"] {
+        border: 2px solid white;
+        border-right: 2px solid $color-header-bg;
+        font-size: 1rem;
+        margin: 0;
+        outline: none;
+    }
+    input[type="text"]:focus {
+        outline: $color-trim solid 2px;
+    }
+}
+
+.shadowed {
+    @include buttonShadow;
 }

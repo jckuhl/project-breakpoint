@@ -1,7 +1,7 @@
-
-
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +10,17 @@
     <title>Project Breakpoint;</title>
     <link rel="stylesheet" href="../style/css/primary.css">
 </head>
+
 <body>
     <div class="wrapper">
         <header>
             <h1><a href="../index.html">Project Breakpoint;</a></h1>
             <form action="#">
-                <label for="search">Search: </label>
-                <input type="text" name="search" id="search">
-                <button type="submit">Search</button>
+                <div>
+                    <label for="search">Search: </label>
+                    <input type="text" class="shadowed" name="search" id="search">
+                    <button type="submit" class="shadowed">Search</button>
+                </div>
             </form>
             <nav>
                 <ul>
@@ -31,65 +34,75 @@
         </header>
         <div class="flex-content">
             <nav>
-                <h3>Web Development</h3>
-                <ul>
-                    <li><a href="./general.html">General</a></li>
-                    <li><a href="./htmlcss.html">HTML/CSS</a></li>
-                    <li><a href="./javascript.html">JavaScript</a></li>
-                    <li><a href="./tools.html">Tools</a></li>
-                    <li><a href="./texteditors.html">Text Editors</a></li>
-                    <li><a href="./youtube.html">Youtube</a></li>
-                    <li><a href="./books.html">Books</a></li>
-                    <li><a href="./podcasts.html">Podcasts</a></li>
-                    <li><a href="./misc.html">Misc</a></li>
-                </ul>
-                <h3>Programming</h3>
-                <ul>
-                    <li><a href="../programming/general.html">General</a></li>
-                    <li><a href="../programming/python.html">Python</a></li>
-                    <li><a href="../programming/tools.html">Tools</a></li>
-                    <li><a href="../programming/codechallenges.html">Code Challenges</a></li>
-                </ul>
-                <h3>Databases</h3>
-                <ul>
-                    <li><a href="../databases/sql.html">SQL</a></li>
-                    <li><a href="../databases/mongo.html">Mongo</a></li>
-                </ul>
+                <div class="card">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li><a href="./general.html">General</a></li>
+                        <li><a href="./htmlcss.html">HTML/CSS</a></li>
+                        <li><a href="./javascript.html">JavaScript</a></li>
+                        <li><a href="./tools.html">Tools</a></li>
+                        <li><a href="./texteditors.html">Text Editors</a></li>
+                        <li><a href="./youtube.html">Youtube</a></li>
+                        <li><a href="./books.html">Books</a></li>
+                        <li><a href="./podcasts.html">Podcasts</a></li>
+                        <li><a href="./misc.html">Misc</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li><a href="../programming/general.html">General</a></li>
+                        <li><a href="../programming/python.html">Python</a></li>
+                        <li><a href="../programming/tools.html">Tools</a></li>
+                        <li><a href="../programming/codechallenges.html">Code Challenges</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Databases</h3>
+                    <ul>
+                        <li><a href="../databases/sql.html">SQL</a></li>
+                        <li><a href="../databases/mongo.html">Mongo</a></li>
+                    </ul>
+                </div>
             </nav>
             <section>
                 <article class="card">
                     <h2>Welcome</h2>
-                    <p>A good web developer needs a good text editor or an IDE.  Here are a number of options you can chose from.  All of the following are available on both Mac and Windows, unless otherwise stated.</p>
+                    <p>A good web developer needs a good text editor or an IDE. Here are a number of options you can chose from. All of the following are available on both Mac and Windows, unless otherwise stated.</p>
                 </article>
                 <article class="card">
                     <h2>Aptana Studio 3</h2>
                     <p><a href="http://www.aptana.com/">Visit</a></p>
-                    <p>Aptana Studio 3 is a professional IDE.  It features HTML, CSS and JavaScript code assist,  The IDE also provides wizards for deployment to Heroku or Engine Yard, as well as support for FTP clients.  It brings along an integrated terminal and a debugger as well as git integration for version control</p>
+                    <p>Aptana Studio 3 is a professional IDE. It features HTML, CSS and JavaScript code assist, The IDE also provides wizards for deployment to Heroku or Engine Yard, as well as support for FTP clients. It brings along an integrated terminal
+                        and a debugger as well as git integration for version control</p>
                 </article>
                 <article class="card">
                     <h2>Atom</h2>
                     <p><a href="https://atom.io/">Visit</a></p>
-                    <p>Atom is a text editor developed in Electron.  Atom is a lightweight cross platform.  It's highly extensible with a built in package manager.  Atom also provides multiple panes and autocompletion to help improve your productivity.</p>
+                    <p>Atom is a text editor developed in Electron. Atom is a lightweight cross platform. It's highly extensible with a built in package manager. Atom also provides multiple panes and autocompletion to help improve your productivity.</p>
                 </article>
                 <article class="card">
                     <h2>Brackets</h2>
                     <p><a href="http://brackets.io/">Visit</a></p>
-                    <p>Brackets is an Electron app designed for web development.  It is lightweight and modern, yet powerful and extensible.  Brackets gives you options such as split-screen coding and a live browser preview.</p>
+                    <p>Brackets is an Electron app designed for web development. It is lightweight and modern, yet powerful and extensible. Brackets gives you options such as split-screen coding and a live browser preview.</p>
                 </article>
                 <article class="card">
                     <h2>Sublime Text</h2>
                     <p><a href="https://www.sublimetext.com/">Visit</a></p>
-                    <p>Sublime is one of the most popular text editors available.  Written in C++, it is very fast. Sublime comes with thousands of extensions you can install as you desire. Sublime is free for use but it's creator does ask for a one time payment.</p>
+                    <p>Sublime is one of the most popular text editors available. Written in C++, it is very fast. Sublime comes with thousands of extensions you can install as you desire. Sublime is free for use but it's creator does ask for a one time
+                        payment.</p>
                 </article>
                 <article class="card">
                     <h2>Webstorm</h2>
                     <p><a href="https://www.jetbrains.com/webstorm/">Visit</a></p>
-                    <p>Created by JetBrains, the same people behind Pycharm, Webstorm is a powerful JavaScript IDE.  Webstorm has powerful code completion, on-the-fly error detection and refactoring tools for JavaScript, Typescript, stylesheet languages and the top frameworks such as Vue, React and Angular.  But you better bust out the wallet, Webstorm is about $169.</p>
+                    <p>Created by JetBrains, the same people behind Pycharm, Webstorm is a powerful JavaScript IDE. Webstorm has powerful code completion, on-the-fly error detection and refactoring tools for JavaScript, Typescript, stylesheet languages and
+                        the top frameworks such as Vue, React and Angular. But you better bust out the wallet, Webstorm is about $169.</p>
                 </article>
                 <article class="card">
                     <h2>VS Code</h2>
                     <p><a href="https://code.visualstudio.com/">Visit</a></p>
-                    <p>VS Code is lightweight and powerful and my personal favorite.  It is highly extensible with thousands of plug ins to chose from.  The syntax highlighting is consistent.  It integrates wellw with ESLint, pointing out errors and offering suggestions and it comes with an integrated terminal that allows you to run your build tools right inside the editor.  Built by Microsoft using Electron, VS Code is free.</p>
+                    <p>VS Code is lightweight and powerful and my personal favorite. It is highly extensible with thousands of plug ins to chose from. The syntax highlighting is consistent. It integrates wellw with ESLint, pointing out errors and offering
+                        suggestions and it comes with an integrated terminal that allows you to run your build tools right inside the editor. Built by Microsoft using Electron, VS Code is free.</p>
                 </article>
             </section>
             <aside>
@@ -115,4 +128,5 @@
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <[ENDIF]-->
 </body>
+
 </html>

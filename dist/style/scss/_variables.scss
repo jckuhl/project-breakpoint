@@ -1,3 +1,8 @@
+// Apply this first
+* {
+    box-sizing: border-box;
+}
+
 // Colors
 $color-header: white;
 $color-header-bg: steelblue;
@@ -8,6 +13,7 @@ $color-card: white;
 $color-card-header: steelblue;
 $color-border-selected: red;
 $color-border-deselected: black;
+$color-link: steelblue;
 
 // Fonts
 $font-reg: Arial sans-serif;

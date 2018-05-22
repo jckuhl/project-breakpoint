@@ -1,0 +1,11 @@
+@mixin buttonShadow {
+    box-shadow: 2px 2px 2px $color-trim-shadow;
+    -webkit-box-shadow: 2px 2px 2px $color-trim-shadow;
+    -moz-box-shadow: 2px 2px 2px $color-trim-shadow;
+}
+
+@mixin cardShadow {
+    box-shadow: 3px 3px 3px $color-trim-shadow;
+    -webkit-box-shadow: 3px 3px 3px $color-trim-shadow;
+    -moz-box-shadow: 3px 3px 3px $color-trim-shadow;
+}

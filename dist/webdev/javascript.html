@@ -4,6 +4,7 @@ https://www.html5canvastutorials.com/tutorials/html5-canvas-element/ -->
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +13,17 @@ https://www.html5canvastutorials.com/tutorials/html5-canvas-element/ -->
     <title>Project Breakpoint;</title>
     <link rel="stylesheet" href="../style/css/primary.css">
 </head>
+
 <body>
     <div class="wrapper">
         <header>
             <h1><a href="../index.html">Project Breakpoint;</a></h1>
             <form action="#">
-                <label for="search">Search: </label>
-                <input type="text" name="search" id="search">
-                <button type="submit">Search</button>
+                <div>
+                    <label for="search">Search: </label>
+                    <input type="text" class="shadowed" name="search" id="search">
+                    <button type="submit" class="shadowed">Search</button>
+                </div>
             </form>
             <nav>
                 <ul>
@@ -33,40 +37,47 @@ https://www.html5canvastutorials.com/tutorials/html5-canvas-element/ -->
         </header>
         <div class="flex-content">
             <nav>
-                <h3>Web Development</h3>
-                <ul>
-                    <li><a href="./general.html">General</a></li>
-                    <li><a href="./htmlcss.html">HTML/CSS</a></li>
-                    <li><a href="./javascript.html">JavaScript</a></li>
-                    <li><a href="./tools.html">Tools</a></li>
-                    <li><a href="./texteditors.html">Text Editors</a></li>
-                    <li><a href="./youtube.html">Youtube</a></li>
-                    <li><a href="./books.html">Books</a></li>
-                    <li><a href="./podcasts.html">Podcasts</a></li>
-                    <li><a href="./misc.html">Misc</a></li>
-                </ul>
-                <h3>Programming</h3>
-                <ul>
-                    <li><a href="../programming/general.html">General</a></li>
-                    <li><a href="../programming/python.html">Python</a></li>
-                    <li><a href="../programming/tools.html">Tools</a></li>
-                    <li><a href="../programming/codechallenges.html">Code Challenges</a></li>
-                </ul>
-                <h3>Databases</h3>
-                <ul>
-                    <li><a href="../databases/sql.html">SQL</a></li>
-                    <li><a href="../databases/mongo.html">Mongo</a></li>
-                </ul>
+                <div class="card">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li><a href="./general.html">General</a></li>
+                        <li><a href="./htmlcss.html">HTML/CSS</a></li>
+                        <li><a href="./javascript.html">JavaScript</a></li>
+                        <li><a href="./tools.html">Tools</a></li>
+                        <li><a href="./texteditors.html">Text Editors</a></li>
+                        <li><a href="./youtube.html">Youtube</a></li>
+                        <li><a href="./books.html">Books</a></li>
+                        <li><a href="./podcasts.html">Podcasts</a></li>
+                        <li><a href="./misc.html">Misc</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li><a href="../programming/general.html">General</a></li>
+                        <li><a href="../programming/python.html">Python</a></li>
+                        <li><a href="../programming/tools.html">Tools</a></li>
+                        <li><a href="../programming/codechallenges.html">Code Challenges</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Databases</h3>
+                    <ul>
+                        <li><a href="../databases/sql.html">SQL</a></li>
+                        <li><a href="../databases/mongo.html">Mongo</a></li>
+                    </ul>
+                </div>
             </nav>
             <section>
                 <article class="card">
                     <h2>JavaScript</h2>
-                    <p>JavaScript is the expansive functional side of web development, a vast programming language that has gone through years of constant development and change.  Here are numerous resources I've found across the web.  You can go ahead and filter them by library or framework if you like.</p>
+                    <p>JavaScript is the expansive functional side of web development, a vast programming language that has gone through years of constant development and change. Here are numerous resources I've found across the web. You can go ahead and
+                        filter them by library or framework if you like.</p>
                 </article>
                 <article class="card">
                     <h2>Filter by Technology</h2>
                     <p><label for="typeSelect">Chose an option: </label>
-                    <select id="typeSelect">
+                        <select id="typeSelect">
                         <option value="any" selected>Any</option>
                         <option value="libraries">Libraries</option>
                         <option value="frameworks">Frameworks</option>
@@ -113,12 +124,14 @@ https://www.html5canvastutorials.com/tutorials/html5-canvas-element/ -->
                     <article class="card" data-tech="angular frameworks">
                         <h2>Angular</h2>
                         <p><a href="https://angular.io/" target="_blank">Visit</a></p>
-                        <p>Angular is Google's framework for building Single Page Applications.  The framework is written in Typescript, a superset of JavaScript.  It allows you to build your web apps in reusable components and delivers high performant web experiences.</p>
+                        <p>Angular is Google's framework for building Single Page Applications. The framework is written in Typescript, a superset of JavaScript. It allows you to build your web apps in reusable components and delivers high performant web
+                            experiences.</p>
                     </article>
                     <article class="card" data-tech="jquery libraries">
                         <h2>jQuery</h2>
                         <p><a href="http://jquery.com/" target="_blank">Visit</a></p>
-                        <p>jQuery is JavaScript's most famous library.  Though it's use has diminished in recent years, it's still holds a lot of utility and is found in many projects.  As a web developer, understanding jQuery will still be useful.  This is the official website for the library.</p>
+                        <p>jQuery is JavaScript's most famous library. Though it's use has diminished in recent years, it's still holds a lot of utility and is found in many projects. As a web developer, understanding jQuery will still be useful. This is
+                            the official website for the library.</p>
                     </article>
                     <article class="card" data-tech="jquery tutorials">
                         <h2>Try jQuery</h2>
@@ -128,7 +141,8 @@ https://www.html5canvastutorials.com/tutorials/html5-canvas-element/ -->
                     <article class="card" data-tech="react frameworks">
                         <h2>React</h2>
                         <p><a href="https://reactjs.org/" target="_blank">Visit</a></p>
-                        <p>React is one of the fastest growing single page application frameworks.  React uses JSX to write reusable components.  It manages state, (and can do further with <a href="https://redux.js.org/" target="_blank">Redux</a>) and helps you develop complex UIs easily.</p>
+                        <p>React is one of the fastest growing single page application frameworks. React uses JSX to write reusable components. It manages state, (and can do further with <a href="https://redux.js.org/" target="_blank">Redux</a>) and helps
+                            you develop complex UIs easily.</p>
                     </article>
                     <article class="card" data-tech="react frameworks">
                         <h2>React Native</h2>
@@ -138,7 +152,8 @@ https://www.html5canvastutorials.com/tutorials/html5-canvas-element/ -->
                     <article class="card" data-tech="vue frameworks">
                         <h2>Vue.js</h2>
                         <p><a href="https://vuejs.org/" target="_blank">Visit</a></p>
-                        <p>Vue is described by Gregg Pollack of <a href="https://www.vuemastery.com/" target="_blank">VueMastery.com</a> as "an approachable, versatile and performant JavaScript framework that allows you to make a more maintainable and testable codebase."</p>
+                        <p>Vue is described by Gregg Pollack of <a href="https://www.vuemastery.com/" target="_blank">VueMastery.com</a> as "an approachable, versatile and performant JavaScript framework that allows you to make a more maintainable and testable
+                            codebase."</p>
                     </article>
                     <article class="card" data-tech="vue tutorials">
                         <h2>Vue Mastery</h2>
@@ -148,7 +163,7 @@ https://www.html5canvastutorials.com/tutorials/html5-canvas-element/ -->
                     <article class="card" data-tech="electron frameworks">
                         <h2>Electron</h2>
                         <p><a href="https://electronjs.org/" target="_blank">Visit</a></p>
-                        <p>Electron is a JavaScript framework that allows you to build desk top apps using HTML, CSS and JavaScript.  VSCode, Atom, and Github Desktop are a few examples of what Electron can do.</p>
+                        <p>Electron is a JavaScript framework that allows you to build desk top apps using HTML, CSS and JavaScript. VSCode, Atom, and Github Desktop are a few examples of what Electron can do.</p>
                     </article>
                     <article class="card" data-tech="javascript references">
                         <h2>Eloquent JavaScript</h2>
@@ -158,7 +173,8 @@ https://www.html5canvastutorials.com/tutorials/html5-canvas-element/ -->
                     <article class="card" data-tech="javascript tutorials">
                         <h2>JavaScript 30</h2>
                         <p><a href="https://javascript30.com/" target="_blank">Visit</a></p>
-                        <p>JavaScript 30 is one of Wes Bos's courses.  It is a free course that challenges you to 30 minutes of JavaScript coding a day.  He provides you with a small project to make and challenges you to make it yourself and then goes over the solution in clear detail.</p>
+                        <p>JavaScript 30 is one of Wes Bos's courses. It is a free course that challenges you to 30 minutes of JavaScript coding a day. He provides you with a small project to make and challenges you to make it yourself and then goes over
+                            the solution in clear detail.</p>
                     </article>
                     <article class="card" data-tech="javascript references">
                         <h2>JS Tips</h2>
@@ -168,12 +184,12 @@ https://www.html5canvastutorials.com/tutorials/html5-canvas-element/ -->
                     <article class="card" data-tech="javascript electron references">
                         <h2>Christian Engvall</h2>
                         <p><a href="https://www.christianengvall.se/" target="_blank">Visit</a></p>
-                        <p>Christian Engvall is a software developer.  His site has numerous articles about web development</p>
+                        <p>Christian Engvall is a software developer. His site has numerous articles about web development</p>
                     </article>
                     <article class="card" data-tech="node frameworks">
                         <h2>Node.js</h2>
                         <p><a href="https://nodejs.org/en/" target="_blank">Visit</a></p>
-                        <p>Node.js is a JavaScript runtime that can run on the console or the server.  Node.js enables us to use JavaScript to write server-side scripts.</p>
+                        <p>Node.js is a JavaScript runtime that can run on the console or the server. Node.js enables us to use JavaScript to write server-side scripts.</p>
                     </article>
                     <article class="card" data-tech="node tutorials">
                         <h2>Node School</h2>
@@ -183,7 +199,7 @@ https://www.html5canvastutorials.com/tutorials/html5-canvas-element/ -->
                     <article class="card" data-tech="angular vue electron tutorials">
                         <h2>Coursetro</h2>
                         <p><a href="https://coursetro.com/">Visit</a></p>
-                        <p>Coursetro has numerous courses on JavaScript and various frameworks.  It has a mixture of free and premium courses.</p>
+                        <p>Coursetro has numerous courses on JavaScript and various frameworks. It has a mixture of free and premium courses.</p>
                     </article>
                     <article class="card" data-tech="phaser frameworks">
                         <h2>Phaser</h2>
@@ -203,17 +219,18 @@ https://www.html5canvastutorials.com/tutorials/html5-canvas-element/ -->
                     <article class="card" data-tech="javascript libraries">
                         <h2>Lodash</h2>
                         <p><a href="https://lodash.com/">Visit</a></p>
-                        <p>Lodash is a popular JavaScript utility library, known for its speed and modularity.  You can download the entire Lodash library and apply it to your project, or cherry pick specific functions.  Lodash also has an <em>fp</em> library to support functional programming.</p>
+                        <p>Lodash is a popular JavaScript utility library, known for its speed and modularity. You can download the entire Lodash library and apply it to your project, or cherry pick specific functions. Lodash also has an <em>fp</em> library
+                            to support functional programming.</p>
                     </article>
                     <article class="card" data-tech="javascript libraries">
                         <h2>Underscore</h2>
                         <p><a href="http://underscorejs.org/">Visit</a></p>
-                        <p>Underscore provides a whole mess of utilities for JavaScript programmers.  Underscore provides over 100 helper functions without extending built in objects.</p>
+                        <p>Underscore provides a whole mess of utilities for JavaScript programmers. Underscore provides over 100 helper functions without extending built in objects.</p>
                     </article>
                     <article class="card" data-tech="react frameworks">
                         <h2>Next.js</h2>
                         <p><a href="https://nextjs.org/">Visit</a></p>
-                        <p>Next.js is a small framework for React apps, designed for static and server-side rendered applications.  Next.js makes React applications simple.</p>
+                        <p>Next.js is a small framework for React apps, designed for static and server-side rendered applications. Next.js makes React applications simple.</p>
                     </article>
                     <article class="card" data-tech="javascript references">
                         <h2>Job Ready JavaScript</h2>
@@ -223,7 +240,7 @@ https://www.html5canvastutorials.com/tutorials/html5-canvas-element/ -->
                     <article class="card" data-tech="javascript angular react node tutorials">
                         <h2>Scotch School</h2>
                         <p><a href="https://scotch.io/">Visit</a></p>
-                        <p>Scotch is a subscription based site that teaches web development.  They focus on building apps and teaching the <em>why</em> behind the code.  Their projects will also help you build out your portfolio.</p>
+                        <p>Scotch is a subscription based site that teaches web development. They focus on building apps and teaching the <em>why</em> behind the code. Their projects will also help you build out your portfolio.</p>
                     </article>
                 </div>
             </section>
@@ -251,4 +268,5 @@ https://www.html5canvastutorials.com/tutorials/html5-canvas-element/ -->
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <[ENDIF]-->
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,17 @@
     <title>Project Breakpoint;</title>
     <link rel="stylesheet" href="./style/css/primary.css">
 </head>
+
 <body>
     <div class="wrapper">
         <header>
             <h1><a href="./index.html">Project Breakpoint;</a></h1>
             <form action="#">
-                <label for="search">Search: </label>
-                <input type="text" name="search" id="search">
-                <button type="submit">Search</button>
+                <div>
+                    <label for="search">Search: </label>
+                    <input type="text" class="shadowed" name="search" id="search">
+                    <button type="submit" class="shadowed">Search</button>
+                </div>
             </form>
             <nav>
                 <ul>
@@ -29,57 +33,72 @@
         </header>
         <div class="flex-content">
             <nav>
-                <h3>Web Development</h3>
-                <ul>
-                    <li><a href="./webdev/general.html">General</a></li>
-                    <li><a href="./webdev/htmlcss.html">HTML/CSS</a></li>
-                    <li><a href="./webdev/javascript.html">JavaScript</a></li>
-                    <li><a href="./webdev/tools.html">Tools</a></li>
-                    <li><a href="./webdev/texteditors.html">Text Editors</a></li>
-                    <li><a href="./webdev/youtube.html">Youtube</a></li>
-                    <li><a href="./webdev/books.html">Books</a></li>
-                    <li><a href="./webdev/podcasts.html">Podcasts</a></li>
-                    <li><a href="./webdev/misc.html">Misc</a></li>
-                </ul>
-                <h3>Programming</h3>
-                <ul>
-                    <li><a href="./programming/general.html">General</a></li>
-                    <li><a href="./programming/python.html">Python</a></li>
-                    <li><a href="./programming/tools.html">Tools</a></li>
-                    <li><a href="#">Code Challenges</a></li>
-                </ul>
-                <h3>Databases</h3>
-                <ul>
-                    <li><a href="./databases/sql.html">SQL</a></li>
-                    <li><a href="./databases/mongo.html">Mongo</a></li>
-                </ul>
+                <div class="card">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li><a href="./webdev/general.html">General</a></li>
+                        <li><a href="./webdev/htmlcss.html">HTML/CSS</a></li>
+                        <li><a href="./webdev/javascript.html">JavaScript</a></li>
+                        <li><a href="./webdev/tools.html">Tools</a></li>
+                        <li><a href="./webdev/texteditors.html">Text Editors</a></li>
+                        <li><a href="./webdev/youtube.html">Youtube</a></li>
+                        <li><a href="./webdev/books.html">Books</a></li>
+                        <li><a href="./webdev/podcasts.html">Podcasts</a></li>
+                        <li><a href="./webdev/misc.html">Misc</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li><a href="./programming/general.html">General</a></li>
+                        <li><a href="./programming/python.html">Python</a></li>
+                        <li><a href="./programming/books.html"></a></li>
+                        <li><a href="./programming/tools.html">Tools</a></li>
+                        <li><a href="./programming/codechallenges.html">Code Challenges</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Databases</h3>
+                    <ul>
+                        <li><a href="./databases/sql.html">SQL</a></li>
+                        <li><a href="./databases/mongo.html">Mongo</a></li>
+                    </ul>
+                </div>
             </nav>
             <section>
                 <article class="card">
                     <h2>What is Project Breakpoint?</h2>
-                    <p>Project Breakpoint is a brand I created a long time ago.  It is not a business, I do not try to make money off of it.  It's a name for me to slap on my web content and call it mine.</p>
+                    <p>Project Breakpoint is a brand I created a long time ago. It is not a business, I do not try to make money off of it. It's a name for me to slap on my web content and call it mine.</p>
                 </article>
                 <article class="card">
                     <h2>A Little About Me</h2>
-                    <p>My name is Jonathan Kuhl and I am a web developer.  I started learning web development back in the days of HTML4 when I was in high school.  I also learned some game programming with 3d GameStudio and their C-Script language.  I didn't stay with it and that is something I'll regret the rest of my life, because there is a gap in my experience between HTML4, and when I picked up HTML5 again in 2017.</p>
-                    <p>I went to college first for Aviation Flight Operations and then for Air Traffic Control.  This plan didn't pan out so I switched gears in 2017 towards web and software development.  Most of the things on this site are resources that I've used to advance my knowledge.</p>
-                    <p>I have put my focus in JavaScript and web development as well as React, Angular and Vue.  I'm focusing on Front End, though I have interest in Node.js, Express, and Mongo.  I also know some SQL.  Beyond web development, I know Python and Swift.</p>
-                    <p>Outside of programming, I like to write.  I have a few unpublished novels that are half-developed, that I work on now and then.  I usually participate in NaNoWriMo, if you're a writer, check it out.  I like to write sci-fi and fantasy.</p>
-                    <p>Professionally, I'm an NCO in the United States Air Force Reserves at Westover ARB.  I've also held several jobs in the civilian sector.  I was a lift operator for Sunday River, Maine, a ramp agent for JetBlue and United at Portland International, in Maine, and most recently, a relationship manager for Barclays.</p>
+                    <p>My name is Jonathan Kuhl and I am a web developer. I started learning web development back in the days of HTML4 when I was in high school. I also learned some game programming with 3d GameStudio and their C-Script language. I didn't
+                        stay with it and that is something I'll regret the rest of my life, because there is a gap in my experience between HTML4, and when I picked up HTML5 again in 2017.</p>
+                    <p>I went to college first for Aviation Flight Operations and then for Air Traffic Control. This plan didn't pan out so I switched gears in 2017 towards web and software development. Most of the things on this site are resources that
+                        I've used to advance my knowledge.</p>
+                    <p>I have put my focus in JavaScript and web development as well as React, Angular and Vue. I'm focusing on Front End, though I have interest in Node.js, Express, and Mongo. I also know some SQL. Beyond web development, I know Python
+                        and Swift.</p>
+                    <p>Outside of programming, I like to write. I have a few unpublished novels that are half-developed, that I work on now and then. I usually participate in NaNoWriMo, if you're a writer, check it out. I like to write sci-fi and fantasy.</p>
+                    <p>Professionally, I'm an NCO in the United States Air Force Reserves at Westover ARB. I've also held several jobs in the civilian sector. I was a lift operator for Sunday River, Maine, a ramp agent for JetBlue and United at Portland
+                        International, in Maine, and most recently, a relationship manager for Barclays.</p>
                 </article>
             </section>
             <aside>
-                <h3>Other Useful Links</h3>
-                <ul>
-                    <li><a href="./fathers/fathers.html">Fathers and Mothers of CS</a></li>
-                    <li><a href="./compsci/compsci.html">Computer Science</a></li>
-                    <li><a href="./dataanalysis/dataanalysis.html">Data Analysis</a></li>
-                    <li><a href="./employment/employment.html">Employment</a></li>
-                </ul>
-                <h3>Games</h3>
-                <ul>
-                    <a href="../pong/pong.html">Pong</a>
-                </ul>
+                <div class="card">
+                    <h3>Other Useful Links</h3>
+                    <ul>
+                        <li><a href="./fathers/fathers.html">Fathers and Mothers of CS</a></li>
+                        <li><a href="./compsci/compsci.html">Computer Science</a></li>
+                        <li><a href="./dataanalysis/dataanalysis.html">Data Analysis</a></li>
+                        <li><a href="./employment/employment.html">Employment</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Games</h3>
+                    <ul>
+                        <a href="../pong/pong.html">Pong</a>
+                    </ul>
+                </div>
             </aside>
         </div>
         <footer>
@@ -91,4 +110,5 @@
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <[ENDIF]-->
 </body>
+
 </html>

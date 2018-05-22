@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A repository of resources for web development">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Project Breakpoint;</title>
+    <link rel="stylesheet" href="./style/css/normalize.css">
     <link rel="stylesheet" href="./style/css/primary.css">
 </head>
+
 <body>
     <div class="wrapper">
         <header>
             <h1><a href="./index.html">Project Breakpoint;</a></h1>
             <form action="#">
-                <label for="search">Search: </label>
-                <input type="text" name="search" id="search">
-                <button type="submit">Search</button>
+                <div>
+                    <label for="search">Search: </label>
+                    <input type="text" class="shadowed" name="search" id="search">
+                    <button type="submit" class="shadowed">Search</button>
+                </div>
             </form>
             <nav>
                 <ul>
@@ -30,7 +35,7 @@
         <div class="flex-content">
             <nav>
                 <div class="card">
-                <h3>Web Development</h3>
+                    <h3>Web Development</h3>
                     <ul>
                         <li><a href="./webdev/general.html">General</a></li>
                         <li><a href="./webdev/htmlcss.html">HTML/CSS</a></li>
@@ -64,30 +69,36 @@
             <section>
                 <article class="card">
                     <h2>Welcome</h2>
-                    <p>Project Breakpoint is a repository of web development and programming resources that I have found throughout the Internet.  Here you can find references and tutorials to everything you'll need to be a successful web developer.</p>
-                    <p>Starting web development can be a daunting task.  It can clutter your browser's bookmarks.  Things can get lost because there's so much out there.  Here, I try to bring some of it together, in a more centralized location.</p>
+                    <p>Project Breakpoint is a repository of web development and programming resources that I have found throughout the Internet. Here you can find references and tutorials to everything you'll need to be a successful web developer.</p>
+                    <p>Starting web development can be a daunting task. It can clutter your browser's bookmarks. Things can get lost because there's so much out there. Here, I try to bring some of it together, in a more centralized location.</p>
                 </article>
                 <article class="card">
                     <h2>What can you find here?</h2>
-                    <p>Web development is a vast ecosystem.  You think to yourself that you want to build a webpage, and it'll be simple right?  Once you know the Holy Trinity (the HTML, the CSS and the Holy JavaScript), you're good to go.  Right?</p>
-                    <p>Except there's far more to it than that.  There are the frameworks, like Vue, React and Angular.  There's Babel and Webpack.  There's version control with git and Github.  There's server-side programming with Node.JS or Python.  Do you want to use flex box or grid, or to download Bootstrap?  Keeping it all straight and knowing where to turn to can be a nightmare.</p>
-                    <p>Here you'll find all the relevant resources for everything you need.  There are references and tutorials and everything in between to help you learn and grow as a developer, and to try to keep the clutter to a minimum.</p>
-                    <p>Please note, I am not paid for this.  I am putting up things I found useful, or have come heavily recommended.  I am also not endorsing any of the resources here, other than to say they're good to use.  I am not here to promote Angular over React or any other opinions like that, but to simply say hey, here are some useful things you might be interested in.</p>
+                    <p>Web development is a vast ecosystem. You think to yourself that you want to build a webpage, and it'll be simple right? Once you know the Holy Trinity (the HTML, the CSS and the Holy JavaScript), you're good to go. Right?</p>
+                    <p>Except there's far more to it than that. There are the frameworks, like Vue, React and Angular. There's Babel and Webpack. There's version control with git and Github. There's server-side programming with Node.JS or Python. Do you
+                        want to use flex box or grid, or to download Bootstrap? Keeping it all straight and knowing where to turn to can be a nightmare.</p>
+                    <p>Here you'll find all the relevant resources for everything you need. There are references and tutorials and everything in between to help you learn and grow as a developer, and to try to keep the clutter to a minimum.</p>
+                    <p>Please note, I am not paid for this. I am putting up things I found useful, or have come heavily recommended. I am also not endorsing any of the resources here, other than to say they're good to use. I am not here to promote Angular
+                        over React or any other opinions like that, but to simply say hey, here are some useful things you might be interested in.</p>
                     <p>Oh, and there are games you can play, written on HTML Canvas</p>
                 </article>
             </section>
             <aside>
-                <h3>Other Useful Links</h3>
-                <ul>
-                    <li><a href="./fathers/fathers.html">Fathers and Mothers of CS</a></li>
-                    <li><a href="./compsci/compsci.html">Computer Science</a></li>
-                    <li><a href="./dataanalysis/dataanalysis.html">Data Analysis</a></li>
-                    <li><a href="./employment/employment.html">Employment</a></li>
-                </ul>
-                <h3>Games</h3>
-                <ul>
-                    <a href="../pong/pong.html">Pong</a>
-                </ul>
+                <div class="card">
+                    <h3>Other Useful Links</h3>
+                    <ul>
+                        <li><a href="./fathers/fathers.html">Fathers and Mothers of CS</a></li>
+                        <li><a href="./compsci/compsci.html">Computer Science</a></li>
+                        <li><a href="./dataanalysis/dataanalysis.html">Data Analysis</a></li>
+                        <li><a href="./employment/employment.html">Employment</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Games</h3>
+                    <ul>
+                        <a href="../pong/pong.html">Pong</a>
+                    </ul>
+                </div>
             </aside>
         </div>
         <footer>
@@ -98,5 +109,7 @@
     <!--[if lt IE9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <[ENDIF]-->
+    <script src="./scripts/search.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,17 @@
     <title>Project Breakpoint;</title>
     <link rel="stylesheet" href="../style/css/primary.css">
 </head>
+
 <body>
     <div class="wrapper">
         <header>
             <h1><a href="../index.html">Project Breakpoint;</a></h1>
             <form action="#">
-                <label for="search">Search: </label>
-                <input type="text" name="search" id="search">
-                <button type="submit">Search</button>
+                <div>
+                    <label for="search">Search: </label>
+                    <input type="text" class="shadowed" name="search" id="search">
+                    <button type="submit" class="shadowed">Search</button>
+                </div>
             </form>
             <nav>
                 <ul>
@@ -29,30 +33,36 @@
         </header>
         <div class="flex-content">
             <nav>
-                <h3>Web Development</h3>
-                <ul>
-                    <li><a href="./general.html">General</a></li>
-                    <li><a href="./htmlcss.html">HTML/CSS</a></li>
-                    <li><a href="./javascript.html">JavaScript</a></li>
-                    <li><a href="./tools.html">Tools</a></li>
-                    <li><a href="./texteditors.html">Text Editors</a></li>
-                    <li><a href="./youtube.html">Youtube</a></li>
-                    <li><a href="./books.html">Books</a></li>
-                    <li><a href="./podcasts.html">Podcasts</a></li>
-                    <li><a href="./misc.html">Misc</a></li>
-                </ul>
-                <h3>Programming</h3>
-                <ul>
-                    <li><a href="../programming/general.html">General</a></li>
-                    <li><a href="../programming/python.html">Python</a></li>
-                    <li><a href="../programming/tools.html">Tools</a></li>
-                    <li><a href="../programming/codechallenges.html">Code Challenges</a></li>
-                </ul>
-                <h3>Databases</h3>
-                <ul>
-                    <li><a href="../databases/sql.html">SQL</a></li>
-                    <li><a href="../databases/mongo.html">Mongo</a></li>
-                </ul>
+                <div class="card">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li><a href="./general.html">General</a></li>
+                        <li><a href="./htmlcss.html">HTML/CSS</a></li>
+                        <li><a href="./javascript.html">JavaScript</a></li>
+                        <li><a href="./tools.html">Tools</a></li>
+                        <li><a href="./texteditors.html">Text Editors</a></li>
+                        <li><a href="./youtube.html">Youtube</a></li>
+                        <li><a href="./books.html">Books</a></li>
+                        <li><a href="./podcasts.html">Podcasts</a></li>
+                        <li><a href="./misc.html">Misc</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li><a href="../programming/general.html">General</a></li>
+                        <li><a href="../programming/python.html">Python</a></li>
+                        <li><a href="../programming/tools.html">Tools</a></li>
+                        <li><a href="../programming/codechallenges.html">Code Challenges</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Databases</h3>
+                    <ul>
+                        <li><a href="../databases/sql.html">SQL</a></li>
+                        <li><a href="../databases/mongo.html">Mongo</a></li>
+                    </ul>
+                </div>
             </nav>
             <section>
                 <article class="card" data-tech="html css">
@@ -62,7 +72,7 @@
                 <article class="card">
                     <h2>Filter by Technology</h2>
                     <p><label for="typeSelect">Chose an option: </label>
-                    <select id="typeSelect">
+                        <select id="typeSelect">
                         <option value="any" selected>Any</option>
                         <option value="ref">References</option>
                         <option value="doc">Library or Framework</option>
@@ -100,62 +110,62 @@
                     <article class="card" data-tech="html css">
                         <h2>HTML.com</h2>
                         <p><a href="https://html.com/">Visit</a></p>
-                        <p>HTML.com is a site that will teach you HTML and CSS from beginner to expert.  They provide tutorials, cheat sheets and articles discussing HTML and CSS.</p>
+                        <p>HTML.com is a site that will teach you HTML and CSS from beginner to expert. They provide tutorials, cheat sheets and articles discussing HTML and CSS.</p>
                     </article>
                     <article class="card" data-tech="css">
                         <h2>CSS Tricks</h2>
                         <p><a href="https://css-tricks.com/" target="_blank">Visit</a></p>
-                        <p>CSS Tricks is a great resource for learning CSS.  CSS Tricks covers everything you need to know from transitions to gradients.  Their <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Guide to Flexbox</a> is a guide I refer to almost every time I use Flexbox.</p>
+                        <p>CSS Tricks is a great resource for learning CSS. CSS Tricks covers everything you need to know from transitions to gradients. Their <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Guide to Flexbox</a>                            is a guide I refer to almost every time I use Flexbox.</p>
                     </article>
                     <article class="card" data-tech="bootstrap">
                         <h2>Bootstrap</h2>
                         <p><a href="https://getbootstrap.com/" target="_blank">Visit</a></p>
-                        <p>Bootstrap is among the most popular CSS frameworks to work with.  Bootstrap allows you to develop your site with lightning speed, providing you with responsive layouts in no time at all.</p>
+                        <p>Bootstrap is among the most popular CSS frameworks to work with. Bootstrap allows you to develop your site with lightning speed, providing you with responsive layouts in no time at all.</p>
                     </article>
                     <article class="card" data-tech="bootstrap">
                         <h2>Bootswatch</h2>
                         <p><a href="https://bootswatch.com/" target="_blank">Visit</a></p>
-                        <p>Bootswatch provides a number of pre-configured styles you can rapidly apply to your website.  Bootswatch is based on Bootstrap.  The website is filled with multiple examples of layout and code.</p>
+                        <p>Bootswatch provides a number of pre-configured styles you can rapidly apply to your website. Bootswatch is based on Bootstrap. The website is filled with multiple examples of layout and code.</p>
                     </article>
                     <article class="card" data-tech="materialize">
                         <h2>Materialize</h2>
                         <p><a href="http://materializecss.com/" target="_blank">Visit</a></p>
-                        <p>Materialize is a CSS framework that enables you to create responsive websites that are designed to give your users a smoother experience as they use your site.  Materialize is well documented and easy to learn and utilize.</p>
+                        <p>Materialize is a CSS framework that enables you to create responsive websites that are designed to give your users a smoother experience as they use your site. Materialize is well documented and easy to learn and utilize.</p>
                     </article>
                     <article class="card" data-tech="sass">
                         <h2>Sass</h2>
                         <p><a href="http://sass-lang.com/" target="_blank">Visit</a></p>
-                        <p>Sass is a CSS precompiler that takes the pain out of coding CSS.  It enables you to use features such as mixins, extensions, loops, conditionals and variables (among other tricks) and uses Ruby to compile your Sass files to CSS.</p>
+                        <p>Sass is a CSS precompiler that takes the pain out of coding CSS. It enables you to use features such as mixins, extensions, loops, conditionals and variables (among other tricks) and uses Ruby to compile your Sass files to CSS.</p>
                     </article>
                     <article class="card" data-tech="less">
                         <h2>Less</h2>
                         <p><a href="http://sass-lang.com/" target="_blank">Visit</a></p>
-                        <p>Less is a CSS precompiler that uses JavaScript to convert your code to CSS.  Like Sass, Less provides more features like mixins, conditionals and variables and makes CSS coding faster and easier to read.</p>
+                        <p>Less is a CSS precompiler that uses JavaScript to convert your code to CSS. Like Sass, Less provides more features like mixins, conditionals and variables and makes CSS coding faster and easier to read.</p>
                     </article>
                     <article class="card" data-tech="css">
                         <h2>Normalize</h2>
                         <p><a href="https://necolas.github.io/normalize.css/" target="_blank">Visit</a></p>
-                        <p>Normalize is a stylesheet that helps, well, normalize the differences between browsers.  This will help give your users a more consistent experience across browsers.</p>
+                        <p>Normalize is a stylesheet that helps, well, normalize the differences between browsers. This will help give your users a more consistent experience across browsers.</p>
                     </article>
                     <article class="card" data-tech="css">
                         <h2>CSS Reset</h2>
                         <p><a href="https://cssreset.com/scripts/eric-meyer-reset-css/" target="_blank">Visit</a></p>
-                        <p>CSS Reset is a stylesheet that helps minimize the differences between browsers.  This will help give your users a more consistent experience across browsers.</p>
+                        <p>CSS Reset is a stylesheet that helps minimize the differences between browsers. This will help give your users a more consistent experience across browsers.</p>
                     </article>
                     <article class="card" data-tech="css">
                         <h2>CSS Gradients</h2>
                         <p><a href="https://cssgradient.io/">Visit</a></p>
-                        <p>CSS Gradients is a free web tool for designing gradients for your website.  Plug in the colors you want, play around with it, and then simply copy and paste the CSS to where you need it.</p>
+                        <p>CSS Gradients is a free web tool for designing gradients for your website. Plug in the colors you want, play around with it, and then simply copy and paste the CSS to where you need it.</p>
                     </article>
                     <article class="card" data-tech="bulma">
                         <h2>Bulma</h2>
                         <p><a href="https://bulma.io/">Visit</a></p>
-                        <p>Bulma is a CSS framework designed for mobile-first responsive websites.  It is modular and modern, based on CSS Flexbox.</p>
+                        <p>Bulma is a CSS framework designed for mobile-first responsive websites. It is modular and modern, based on CSS Flexbox.</p>
                     </article>
                     <article class="card" data-tech="css">
                         <h2>CSS Icons</h2>
                         <p><a href="http://cssicon.space/#/icon/more-solid">Visit</a></p>
-                        <p>CSS Icons provides hundreds of icons made from pure CSS that can exist in a single div element.  It also provides transition animations for use as well.</p>
+                        <p>CSS Icons provides hundreds of icons made from pure CSS that can exist in a single div element. It also provides transition animations for use as well.</p>
                     </article>
                 </div>
             </section>
@@ -183,4 +193,5 @@
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <[ENDIF]-->
 </body>
+
 </html>

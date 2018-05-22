@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,17 @@
     <title>Project Breakpoint;</title>
     <link rel="stylesheet" href="../style/css/primary.css">
 </head>
+
 <body>
     <div class="wrapper">
         <header>
             <h1><a href="../index.html">Project Breakpoint;</a></h1>
             <form action="#">
-                <label for="search">Search: </label>
-                <input type="text" name="search" id="search">
-                <button type="submit">Search</button>
+                <div>
+                    <label for="search">Search: </label>
+                    <input type="text" class="shadowed" name="search" id="search">
+                    <button type="submit" class="shadowed">Search</button>
+                </div>
             </form>
             <nav>
                 <ul>
@@ -29,30 +33,36 @@
         </header>
         <div class="flex-content">
             <nav>
-                <h3>Web Development</h3>
-                <ul>
-                    <li><a href="./general.html">General</a></li>
-                    <li><a href="./htmlcss.html">HTML/CSS</a></li>
-                    <li><a href="./javascript.html">JavaScript</a></li>
-                    <li><a href="./tools.html">Tools</a></li>
-                    <li><a href="./texteditors.html">Text Editors</a></li>
-                    <li><a href="./youtube.html">Youtube</a></li>
-                    <li><a href="./books.html">Books</a></li>
-                    <li><a href="./podcasts.html">Podcasts</a></li>
-                    <li><a href="./misc.html">Misc</a></li>
-                </ul>
-                <h3>Programming</h3>
-                <ul>
-                    <li><a href="../programming/general.html">General</a></li>
-                    <li><a href="../programming/python.html">Python</a></li>
-                    <li><a href="../programming/tools.html">Tools</a></li>
-                    <li><a href="../programming/codechallenges.html">Code Challenges</a></li>
-                </ul>
-                <h3>Databases</h3>
-                <ul>
-                    <li><a href="../databases/sql.html">SQL</a></li>
-                    <li><a href="../databases/mongo.html">Mongo</a></li>
-                </ul>
+                <div class="card">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li><a href="./general.html">General</a></li>
+                        <li><a href="./htmlcss.html">HTML/CSS</a></li>
+                        <li><a href="./javascript.html">JavaScript</a></li>
+                        <li><a href="./tools.html">Tools</a></li>
+                        <li><a href="./texteditors.html">Text Editors</a></li>
+                        <li><a href="./youtube.html">Youtube</a></li>
+                        <li><a href="./books.html">Books</a></li>
+                        <li><a href="./podcasts.html">Podcasts</a></li>
+                        <li><a href="./misc.html">Misc</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li><a href="../programming/general.html">General</a></li>
+                        <li><a href="../programming/python.html">Python</a></li>
+                        <li><a href="../programming/tools.html">Tools</a></li>
+                        <li><a href="../programming/codechallenges.html">Code Challenges</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Databases</h3>
+                    <ul>
+                        <li><a href="../databases/sql.html">SQL</a></li>
+                        <li><a href="../databases/mongo.html">Mongo</a></li>
+                    </ul>
+                </div>
             </nav>
             <section>
                 <article class="card">
@@ -94,31 +104,32 @@
                         <h2>HTML &amp; CSS</h2>
                         <h3>Jon Duckett</h3>
                         <p><a href="https://www.amazon.com/HTML-CSS-Design-Build-Websites/dp/1118008189/ref=sr_1_4" target="_blank">Amazon</a></p>
-                        <p>Jon Duckett's book was my first.  It is a beautifully designed book filled with examples.  He goes over HTML and CSS in great depth, carefully explaining each principle in full before moving on.</p>
+                        <p>Jon Duckett's book was my first. It is a beautifully designed book filled with examples. He goes over HTML and CSS in great depth, carefully explaining each principle in full before moving on.</p>
                     </article>
                     <article class="card" data-tech="javascript jquery">
                         <h2>JavaScript &amp; jQuery</h2>
                         <h3>Jon Duckett</h3>
                         <p><a href="https://www.amazon.com/JavaScript-JQuery-Interactive-Front-End-Development/dp/1118531647/ref=sr_1_4" target="_blank">Amazon</a></p>
-                        <p>Jon Duckett's next book is as informative as the first.  JavaScript &amp; jQuery is an indepth book on the language and its most popular library.  He'll take you through the basics of programming to techniques like AJAX.</p>
+                        <p>Jon Duckett's next book is as informative as the first. JavaScript &amp; jQuery is an indepth book on the language and its most popular library. He'll take you through the basics of programming to techniques like AJAX.</p>
                     </article>
                     <article class="card" data-tech="javascript">
                         <h2>JavaScript: The Good Parts</h2>
                         <h3>Douglas Crockford</h3>
                         <p><a href="https://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742/ref=sr_1_1" target="_blank">Amazon</a></p>
-                        <p>JavaScript has had a very bumpy development, making it in some ways a very strange language.  Douglas Crockford explains in this book, the good parts of JavaScript and how to write elegant and beautiful code.</p>
+                        <p>JavaScript has had a very bumpy development, making it in some ways a very strange language. Douglas Crockford explains in this book, the good parts of JavaScript and how to write elegant and beautiful code.</p>
                     </article>
                     <article class="card" data-tech="javascript">
                         <h2>You Don't Know JS: Up and Going</h2>
                         <h3>Kyle Simpson</h3>
                         <p><a href="https://www.amazon.com/You-Dont-Know-JS-Going-ebook/dp/B00V20DQU8" target="_blank">Amazon</a></p>
-                        <p>Kyle Simpson gives us a more complete view of JavaScript.  This book gives you the basic background in JavaScript programming that you'll need to go further into his series.</p>
+                        <p>Kyle Simpson gives us a more complete view of JavaScript. This book gives you the basic background in JavaScript programming that you'll need to go further into his series.</p>
                     </article>
                     <article class="card" data-tech="javascript">
                         <h2>You Don't Know JS: this &amp; Object Prototypes</h2>
                         <h3>Kyle Simpson</h3>
                         <p><a href="https://www.amazon.com/gp/product/B00LPUIB9G/" target="_blank">Amazon</a></p>
-                        <p><em>this</em> and Object Prototypes walks you through the <em>this</em> keyword and the complexities of JavaScript objects.  Like the other books in the series, this book encourages us to understand, rather than avoid, the more complicated parts of the language. </p>
+                        <p><em>this</em> and Object Prototypes walks you through the <em>this</em> keyword and the complexities of JavaScript objects. Like the other books in the series, this book encourages us to understand, rather than avoid, the more
+                            complicated parts of the language. </p>
                     </article>
                     <article class="card" data-tech="javascript">
                         <h2>You Don't Know JS: Scope &amp; Closures</h2>
@@ -130,7 +141,7 @@
                         <h2>You Don't Know JS: Types &amp; Grammar</h2>
                         <h3>Kyle Simpson</h3>
                         <p><a href="https://developer.mozilla.org/" target="_blank">Visit</a></p>
-                        <p>Types and Grammer goes in depth about the various types in JavaScript.  It discusses coercion and how these types can be confounding or useful.</p>
+                        <p>Types and Grammer goes in depth about the various types in JavaScript. It discusses coercion and how these types can be confounding or useful.</p>
                     </article>
                     <article class="card" data-tech="javascript">
                         <h2>You Don't Know JS: Async &amp; Performance</h2>
@@ -166,7 +177,8 @@
                         <h2>Beginning Angular with Typescript</h2>
                         <h3>Greg Lim</h3>
                         <p><a href="https://developer.mozilla.org/" target="_blank">Visit</a></p>
-                        <p>Angular is a popular framework and this book teaches everything you need to know to master it.  The book is straightforward and has you building apps within minutes.  While it may have TypeScript in the title, the book does not assume experience with TypeScript.</p>
+                        <p>Angular is a popular framework and this book teaches everything you need to know to master it. The book is straightforward and has you building apps within minutes. While it may have TypeScript in the title, the book does not assume
+                            experience with TypeScript.</p>
                     </article>
                 </div>
             </section>
@@ -194,4 +206,5 @@
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <[ENDIF]-->
 </body>
+
 </html>

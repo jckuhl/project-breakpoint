@@ -6,8 +6,13 @@
     section {
         width: 50%;
     }
-    nav, aside {
+    nav {
         width: 20%;
+        margin-left: 1rem;
+    }
+    aside {
+        width: 20%;
+        margin-right: 1rem;
     }
 }
 
@@ -22,7 +27,6 @@
         cursor: pointer;
         flex-shrink: 1;
         margin: 1rem;
-        border-radius: 5px;
     }
     figure {
         cursor: pointer;
@@ -35,4 +39,13 @@
 
 .deselected {
     border: 3px solid $color-border-deselected;
+}
+
+a:link, a:visited {
+    color: $color-link;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

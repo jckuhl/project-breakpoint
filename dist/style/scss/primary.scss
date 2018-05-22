@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 @import 'header';
 @import 'body';
 @import 'footer';
@@ -16,7 +17,7 @@ html, body {
     margin-top: 1rem;
     background: $color-card;
     border: 2px solid $color-trim;
-    box-shadow: 3px 3px 3px $color-trim-shadow;
+    @include cardShadow;
     h2, h3 {
         background: $color-card-header;
         margin: 0;
