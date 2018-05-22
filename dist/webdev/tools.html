@@ -1,9 +1,126 @@
-babel
-webpack
-electron
-gulp
-grunt
-yarn
-brew
-zsh
-snyk
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A repository of resources for web development">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project Breakpoint;</title>
+    <link rel="stylesheet" href="../style/css/primary.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1><a href="../index.html">Project Breakpoint;</a></h1>
+            <form action="#">
+                <label for="search">Search: </label>
+                <input type="text" name="search" id="search">
+                <button type="submit">Search</button>
+            </form>
+            <nav>
+                <ul>
+                    <li><a href="https://projectbreakpoint.wordpress.com/" target="_blank">Blog</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="../../portfolio/portfolio.html">Portfolio</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="flex-content">
+            <nav>
+                <h3>Web Development</h3>
+                <ul>
+                    <li><a href="./general.html">General</a></li>
+                    <li><a href="./htmlcss.html">HTML/CSS</a></li>
+                    <li><a href="./javascript.html">JavaScript</a></li>
+                    <li><a href="./tools.html">Tools</a></li>
+                    <li><a href="./texteditors.html">Text Editors</a></li>
+                    <li><a href="./youtube.html">Youtube</a></li>
+                    <li><a href="./books.html">Books</a></li>
+                    <li><a href="./podcasts.html">Podcasts</a></li>
+                    <li><a href="./misc.html">Misc</a></li>
+                </ul>
+                <h3>Programming</h3>
+                <ul>
+                    <li><a href="../programming/general.html">General</a></li>
+                    <li><a href="../programming/python.html">Python</a></li>
+                    <li><a href="../programming/tools.html">Tools</a></li>
+                    <li><a href="../programming/codechallenges.html">Code Challenges</a></li>
+                </ul>
+                <h3>Databases</h3>
+                <ul>
+                    <li><a href="../databases/sql.html">SQL</a></li>
+                    <li><a href="../databases/mongo.html">Mongo</a></li>
+                </ul>
+            </nav>
+            <section>
+                <article class="card">
+                    <h2>Tools</h2>
+                    <p>Web Development requires numerous tools to get set up, depending on your project.  You might need Webpack to put files together.  You might need Babel to transpile into an older version of JavaScript.  You might want Grunt to automate some task.  Please note, that I am not specifically endorsing any tool on this page, nor do I necessarily use them.  But they're here because either I, or other developers, found them useful.</p>
+                </article>
+                <article class="card">
+                    <h2>Babel</h2>
+                    <p><a href="https://babeljs.io/">Visit</a></p>
+                    <p>JavaScript is a language that is constantly undergoing changes and while the browsers are quick to update, your website visitors might not be.  Babel allows you to write in today's JavaScript and convert it into an earlier version of JavaScript.</p>
+                </article>
+                <article class="card">
+                    <h2>Webpack</h2>
+                    <p><a href="https://webpack.js.org/">Visit</a></p>
+                    <p>Webpack allows you to modulize your JavaScript files and build everything together into one single script.  It can also be configured to work with other tools like Babel and TypeScript</p>
+                </article>
+                <article class="card">
+                    <h2>TypeScript</h2>
+                    <p><a href="https://www.typescriptlang.org/">Visit</a></p>
+                    <p>TypeScript is a superset of JavaScript that adds typing to the language.  Typing and type inferences allow for better error checking and refactoring.  As a superset of JavaScript, TypeScript also comes with the latest JavaScript features.  TypeScript will compile into plain JavaScript for use in your app.</p>
+                </article>
+                <article class="card">
+                    <h2>Gulp</h2>
+                    <p><a href="https://gulpjs.com/">Visit</a></p>
+                    <p>Gulp is a program to help you automate tasks.  You can use Gulp to put together your tooling and save your self some time.  Who wants to constantly tell TypeScript and Sass to compile for you when you can make Gulp do it everytime you save?</p>
+                </article>
+                <article class="card">
+                    <h2>Grunt</h2>
+                    <p><a href="https://gruntjs.com/">Visit</a></p>
+                    <p>Grunt is another JavaScript taskrunner for automation.  Like Gulp, you can use Grunt to put your tooling together and increase your productivity.</p>
+                </article>
+                <article class="card">
+                    <h2>Yarn</h2>
+                    <p><a href="https://yarnpkg.com/en/">Visit</a></p>
+                    <p>Yarn is an alternative package manager to Node.js's NPM.  Yarn is fast and secure, caching downloads and dependencies so you don't need to download them more than once.</p>
+                </article>
+                <article class="card">
+                    <h2>Homebrew</h2>
+                    <p><a href="https://brew.sh/">Visit</a></p>
+                    <p>Homebrew is a package manager for MacOS.  It uses Ruby and Git to deliver the content you need and offers you the ability to upload your own tools to Homebrew.</p>
+                </article>
+                <article class="card">
+                    <h2>Snyk</h2>
+                    <p><a href="">Visit</a></p>
+                    <p>Snyk is a tool that hunts for security flaws in your code.  You can hook it up to your Github repository, your Heroku deployment and many other services.  It will then scan your code and point out the security flaws.  You can also download Snyk via the command line interface to run it locally.</p>
+                </article>
+            </section>
+            <aside>
+                <h3>Other Useful Links</h3>
+                <ul>
+                    <li><a href="../fathers/fathers.html">Fathers and Mothers of CS</a></li>
+                    <li><a href="../compsci/compsci.html">Computer Science</a></li>
+                    <li><a href="../dataanalysis/dataanalysis.html">Data Analysis</a></li>
+                    <li><a href="../employment/employment.html">Employment</a></li>
+                </ul>
+                <h3>Games</h3>
+                <ul>
+                    <a href="../../pong/pong.html">Pong</a>
+                </ul>
+            </aside>
+        </div>
+        <footer>
+            <p>&copy; Jonathan Kuhl</p>
+        </footer>
+    </div>
+
+    <!--[if lt IE9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <[ENDIF]-->
+</body>
+</html>

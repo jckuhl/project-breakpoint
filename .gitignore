@@ -3,5 +3,6 @@ pong/
 pixelpaint/
 portfolio/
 node_modules/
+.sass-cache/
 
 .DS_Store

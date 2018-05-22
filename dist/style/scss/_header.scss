@@ -3,6 +3,8 @@ header {
     align-items: center;
     width: 100%;
     background: $color-header-bg;
+    border-bottom: 2px solid $color-trim;
+    box-shadow: 3px 3px 3px $color-trim-shadow;
     h1 {
         width: 33%;
         a {

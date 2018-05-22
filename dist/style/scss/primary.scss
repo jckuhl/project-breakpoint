@@ -15,8 +15,13 @@ html, body {
 .card {
     margin-top: 1rem;
     background: $color-card;
-    border: 1px solid $color-trim;
-    border-radius: 5px;
+    border: 2px solid $color-trim;
+    box-shadow: 3px 3px 3px $color-trim-shadow;
+    h2, h3 {
+        background: $color-card-header;
+        margin: 0;
+        padding: 1rem;
+    }
 }
 
 h1, h2, h3, p {

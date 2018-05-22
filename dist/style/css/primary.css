@@ -2,7 +2,9 @@ header {
   display: flex;
   align-items: center;
   width: 100%;
-  background: black; }
+  background: steelblue;
+  border-bottom: 2px solid #011136;
+  box-shadow: 3px 3px 3px rgba(1, 17, 54, 0.502); }
   header h1 {
     width: 33%; }
     header h1 a {
@@ -26,11 +28,12 @@ header {
 .flex-content {
   display: flex;
   align-items: stretch;
+  justify-content: space-between;
   width: 100%; }
   .flex-content section {
     width: 50%; }
   .flex-content nav, .flex-content aside {
-    width: 25%; }
+    width: 20%; }
 
 .techstack {
   display: flex;
@@ -67,14 +70,18 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background: #214ebe;
+  background: #ececec;
   font-family: Arial, Helvetica, sans-serif; }
 
 .card {
   margin-top: 1rem;
-  background: #9fbef8;
-  border: 1px solid #011136;
-  border-radius: 5px; }
+  background: white;
+  border: 2px solid #011136;
+  box-shadow: 3px 3px 3px rgba(1, 17, 54, 0.502); }
+  .card h2, .card h3 {
+    background: steelblue;
+    margin: 0;
+    padding: 1rem; }
 
 h1, h2, h3, p {
   margin-left: 1rem;
@@ -99,6 +106,6 @@ figure {
   border-radius: 5px; }
 
 figure:hover {
-  background: #214ebe; }
+  background: #ececec; }
 
 /*# sourceMappingURL=primary.css.map */
