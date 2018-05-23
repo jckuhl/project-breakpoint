@@ -3,9 +3,12 @@
 @import 'header';
 @import 'body';
 @import 'footer';
+@import 'form';
 @import 'mediaqueries';
 
 html, body {
+    overflow-x: hidden;
+    overflow-y: scroll;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -34,12 +37,9 @@ html, body {
     transform: translateX(100%);
 }
 
-section.card.activeCenter {
-    transform: scaleX(150%);
-}
-
 section.activeCenter {
-    flex: 10;
+    display: block;
+    transform: scaleX(150%);
 }
 
 .card.activeCenter {

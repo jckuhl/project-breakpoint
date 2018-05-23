@@ -9,3 +9,7 @@
     -webkit-box-shadow: 3px 3px 3px $color-trim-shadow;
     -moz-box-shadow: 3px 3px 3px $color-trim-shadow;
 }
+
+@mixin innerShadow {
+    box-shadow: inset 2px 2px 3px 2px $color-trim-shadow;
+}

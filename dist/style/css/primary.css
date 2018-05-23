@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Cantarell");
 * {
   box-sizing: border-box; }
 
@@ -83,7 +84,7 @@ header {
   .flex-content section {
     flex: 3;
     margin: 0 2rem;
-    transition: transform 2s; }
+    transition: transform 1s; }
   .flex-content nav {
     flex: 1;
     margin-left: 1rem; }
@@ -128,7 +129,32 @@ footer {
   footer p {
     margin: 0; }
 
+button {
+  color: white;
+  background-color: steelblue;
+  font-size: 1rem;
+  border: 2px solid steelblue;
+  border-radius: 5px;
+  transition: transform 0.5;
+  box-shadow: inset 2px 2px 3px 2px rgba(1, 17, 54, 0.502); }
+
+button:focus {
+  outline: none;
+  transform: translateY(5px); }
+
+button:hover {
+  box-shadow: 2px 2px 2px rgba(1, 17, 54, 0.502);
+  -webkit-box-shadow: 2px 2px 2px rgba(1, 17, 54, 0.502);
+  -moz-box-shadow: 2px 2px 2px rgba(1, 17, 54, 0.502); }
+
+textarea {
+  margin: 1rem;
+  width: 90%;
+  font-size: 1rem; }
+
 html, body {
+  overflow-x: hidden;
+  overflow-y: scroll;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -139,7 +165,7 @@ html, body {
   margin-top: 1rem;
   background: white;
   border: 2px solid #011136;
-  transition: transform 2s;
+  transition: transform 1s;
   box-shadow: 3px 3px 3px rgba(1, 17, 54, 0.502);
   -webkit-box-shadow: 3px 3px 3px rgba(1, 17, 54, 0.502);
   -moz-box-shadow: 3px 3px 3px rgba(1, 17, 54, 0.502); }
@@ -154,11 +180,9 @@ html, body {
 .card.activeright {
   transform: translateX(100%); }
 
-section.card.activeCenter {
-  transform: scaleX(150%); }
-
 section.activeCenter {
-  flex: 10; }
+  display: block;
+  transform: scaleX(150%); }
 
 .card.activeCenter {
   transform: scaleX(150%); }

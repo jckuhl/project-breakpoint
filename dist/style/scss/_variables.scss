@@ -14,11 +14,15 @@ $color-card-header: steelblue;
 $color-border-selected: red;
 $color-border-deselected: black;
 $color-link: steelblue;
+$color-btn: steelblue;
+$color-btn-txt: white;
 
 // Fonts
-$font-reg: Arial sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Cantarell');
+//font-family: 'Cantarell', sans-serif;
+$font-reg: 'Cantarell', sans-serif;
 
 $footer-height: 50px;
 
 //Animation
-$animTime: 2s;
+$animTime: 1s;
