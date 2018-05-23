@@ -17,12 +17,33 @@ html, body {
     margin-top: 1rem;
     background: $color-card;
     border: 2px solid $color-trim;
+    transition: transform $animTime;
     @include cardShadow;
     h2, h3 {
         background: $color-card-header;
         margin: 0;
         padding: 1rem;
     }
+}
+
+.card.activeleft {
+    transform: translateX(-100%);
+}
+
+.card.activeright {
+    transform: translateX(100%);
+}
+
+section.card.activeCenter {
+    transform: scaleX(150%);
+}
+
+section.activeCenter {
+    flex: 10;
+}
+
+.card.activeCenter {
+    transform: scaleX(150%);
 }
 
 h1, h2, h3, p {

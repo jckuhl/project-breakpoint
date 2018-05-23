@@ -26,7 +26,8 @@ header {
     display: inline-flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0; }
+    padding: 0;
+    font-size: 1.25rem; }
     header ul a:visited,
     header ul a:link {
       color: white;
@@ -58,7 +59,7 @@ header {
   header label {
     color: white;
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     margin-right: 0.75rem; }
   header input[type="text"] {
     border: 2px solid white;
@@ -80,12 +81,14 @@ header {
   justify-content: space-between;
   width: 100%; }
   .flex-content section {
-    width: 50%; }
+    flex: 3;
+    margin: 0 2rem;
+    transition: transform 2s; }
   .flex-content nav {
-    width: 20%;
+    flex: 1;
     margin-left: 1rem; }
   .flex-content aside {
-    width: 20%;
+    flex: 1;
     margin-right: 1rem; }
 
 .techstack {
@@ -136,6 +139,7 @@ html, body {
   margin-top: 1rem;
   background: white;
   border: 2px solid #011136;
+  transition: transform 2s;
   box-shadow: 3px 3px 3px rgba(1, 17, 54, 0.502);
   -webkit-box-shadow: 3px 3px 3px rgba(1, 17, 54, 0.502);
   -moz-box-shadow: 3px 3px 3px rgba(1, 17, 54, 0.502); }
@@ -143,6 +147,21 @@ html, body {
     background: steelblue;
     margin: 0;
     padding: 1rem; }
+
+.card.activeleft {
+  transform: translateX(-100%); }
+
+.card.activeright {
+  transform: translateX(100%); }
+
+section.card.activeCenter {
+  transform: scaleX(150%); }
+
+section.activeCenter {
+  flex: 10; }
+
+.card.activeCenter {
+  transform: scaleX(150%); }
 
 h1, h2, h3, p {
   margin-left: 1rem;
