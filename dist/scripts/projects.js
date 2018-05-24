@@ -11,6 +11,12 @@ fetch('https://api.github.com/users/jckuhl/repos')
                 <p><a href="${repo.html_url}" target="_blank">Github</a></p>
                 <p>${repo.description}</p>`;
             cardHolder.appendChild(article);
+            fetch(repo.languages_url)
+                .then(data => data.json())
+                .then(data => {
+                    console.log(data);
+                })
+                .catch(error=> console.error(error));
         });
     })
     .catch(error => console.error(data))
