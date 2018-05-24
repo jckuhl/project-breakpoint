@@ -72,7 +72,7 @@
                     <form action="#">
                         <p>
                             <label for="name">Name:</label>
-                            <input type="text" name="name" id="name">
+                            <input type="text" name="name" id="name" required>
                         </p>
                         <p>
                             <label for="email">Email:</label>
@@ -81,9 +81,9 @@
                         <p>
                             <label for="comments">Comments:</label>
                         </p>
-                        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                        <textarea name="comments" id="comments" cols="30" rows="10" required></textarea>
                         <p>
-                            <button type="submit">Submit</button>
+                            <button type="submit" id="sendBtn">Submit</button>
                         </p>
                     </form>
                 </article>
@@ -114,6 +114,8 @@
     <!--[if lt IE9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <[ENDIF]-->
+    <script src="./scripts/menus.js"></script>
+    <script src="./scripts/search.js"></script>
 </body>
 
 </html>

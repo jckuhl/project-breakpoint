@@ -2,7 +2,11 @@
 pong/
 pixelpaint/
 portfolio/
+
+# Directories that are unwanted
 node_modules/
 .sass-cache/
 
+# Files
 .DS_Store
+webpack.config.js
